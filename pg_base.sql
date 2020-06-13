@@ -38,3 +38,13 @@ CREATE TABLE public.employee (
   CONSTRAINT pk_base_pk__pk
     PRIMARY KEY (base_pk, pk)
 );
+
+CREATE TABLE public.organization (
+  "name"   varchar(200) NOT NULL,
+  pk       varchar(36) NOT NULL,
+  base_pk  integer NOT NULL,
+  code     varchar(10),
+  /* Keys */
+  CONSTRAINT "organization_Index01"
+    PRIMARY KEY (base_pk, pk)
+);
