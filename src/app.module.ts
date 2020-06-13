@@ -1,12 +1,13 @@
 import { Module } from '@nestjs/common';
-import { ConfigModule } from '@nestjs/config';
 
+import { configModule } from './configure.root';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { PgPoolService } from './shared/pg-pool/pg-pool.service';
-import { configModule } from './configure.root';
 import { EmployeeModule } from './employee/employee.module';
 import { OrganizationModule } from './organization/organization.module';
+import { SubdivisionModule } from './subdivision/subdivision.module';
+import { PositionModule } from './position/position.module';
 
 const environment = process.env.NODE_ENV || 'development';
 
@@ -16,7 +17,9 @@ const environment = process.env.NODE_ENV || 'development';
     UserModule,
     AuthModule,
     EmployeeModule,
-    OrganizationModule
+    OrganizationModule,
+    SubdivisionModule,
+    PositionModule
   ],
   providers: [PgPoolService],
 })

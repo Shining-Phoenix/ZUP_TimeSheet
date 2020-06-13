@@ -47,6 +47,29 @@ CREATE TABLE public.organization (
   base_pk  integer NOT NULL,
   code     varchar(10),
   /* Keys */
-  CONSTRAINT "organization_Index01"
+  CONSTRAINT organization_pkey
     PRIMARY KEY (base_pk, pk)
+);
+
+
+CREATE TABLE public.subdivision (
+  pk               varchar(36) NOT NULL,
+  base_pk          integer NOT NULL,
+  parent_pk        varchar(36),
+  organization_pk  varchar(36),
+  "name"           varchar(150),
+  code             varchar(9),
+  /* Keys */
+  CONSTRAINT subdivision_pkey
+    PRIMARY KEY (pk, base_pk)
+);
+
+
+CREATE TABLE public."position" (
+  "name"   varchar(150),
+  pk       varchar(36) NOT NULL,
+  base_pk  integer NOT NULL,
+  /* Keys */
+  CONSTRAINT employee_position_pkey
+    PRIMARY KEY (pk, base_pk)
 );
