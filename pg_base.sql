@@ -30,10 +30,12 @@ CREATE TABLE public.user_groups (
 );
 
 CREATE TABLE public.employee (
-  pk          varchar(36) NOT NULL,
-  base_pk     integer NOT NULL,
-  user_id_1c  varchar(36) NOT NULL,
-  code        varchar(10) NOT NULL,
+  pk                varchar(36) NOT NULL,
+  base_pk           integer NOT NULL,
+  user_id_1c        varchar(36) NOT NULL,
+  code              varchar(10) NOT NULL,
+  organization_pk   varchar(36) NOT NULL,
+  head_employee_pk  varchar(36) NOT NULL,
   /* Keys */
   CONSTRAINT pk_base_pk__pk
     PRIMARY KEY (base_pk, pk)

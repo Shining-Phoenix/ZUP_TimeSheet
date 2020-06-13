@@ -21,4 +21,14 @@ export class EmployeeDto{
     @IsString()
     @IsNotEmpty()
     readonly code: string;
+
+    @ApiProperty()
+    @IsString()
+    @IsNotEmpty()
+    readonly organization_pk: string;
+
+    @ApiProperty()
+    @IsString()
+    @IsNotEmpty()
+    readonly head_employee_pk: string;
 }

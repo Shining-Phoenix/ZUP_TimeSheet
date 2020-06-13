@@ -18,15 +18,17 @@ export class EmployeeService {
 
       const insertSQL = `
           INSERT INTO public.employee
-              (pk, base_pk, user_id_1c, code)
+              (pk, base_pk, user_id_1c, code, organization_pk, head_employee_pk)
           VALUES
-              ($1, $2, $3, $4)
+              ($1, $2, $3, $4, $5, $6)
           RETURNING pk`;
       const result = await client.query(insertSQL,
         [employeeDto.pk,
           employeeDto.base_pk,
           employeeDto.user_id_1c,
-          employeeDto.code],
+          employeeDto.code,
+          employeeDto.organization_pk,
+          employeeDto.head_employee_pk],
       );
       const rows = [...result];
 
@@ -56,13 +58,17 @@ export class EmployeeService {
               public.employee
           SET
               user_id_1c = $1,
-              code = $2
+              code = $2,
+              organization_pk = $3,
+              head_employee_pk = $4
           WHERE
-              pk = $3
-              and base_pk = $4`;
+              pk = $5
+              and base_pk = $6`;
       await client.query(insertSQL,
         [employeeDto.user_id_1c,
           employeeDto.code,
+          employeeDto.organization_pk,
+          employeeDto.head_employee_pk,
           employeeDto.pk,
           employeeDto.base_pk],
       );
