@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<InformationRegister uuid="6eff5c2b-7f0a-410a-9536-2f5755f0638e">
+	<InformationRegister uuid="497b552c-96b2-4551-acde-78b99306b5d5">
 		<InternalInfo>
 			<xr:GeneratedType name="InformationRegisterRecord.ТУРВ_Пользователи" category="Record">
-				<xr:TypeId>b043131f-c859-4126-a60f-724e72126360</xr:TypeId>
-				<xr:ValueId>7a66a8c3-7a18-46ca-b6bb-ae88e5994844</xr:ValueId>
+				<xr:TypeId>24064de2-4cfc-4b7a-8f71-93ff933773af</xr:TypeId>
+				<xr:ValueId>55463651-cc8b-4374-bacc-b40074847754</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterManager.ТУРВ_Пользователи" category="Manager">
-				<xr:TypeId>0d2ae6f7-c1ac-4587-92d1-ee314bd1aceb</xr:TypeId>
-				<xr:ValueId>b88afb23-6462-4335-adb4-ef0e491ef07c</xr:ValueId>
+				<xr:TypeId>737f2004-1fda-422a-87cf-a13a955284ec</xr:TypeId>
+				<xr:ValueId>a3532c76-52ba-413e-b075-e486068e5efa</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterSelection.ТУРВ_Пользователи" category="Selection">
-				<xr:TypeId>6e6ccf17-3948-4230-b907-af9e8207a4d4</xr:TypeId>
-				<xr:ValueId>f707aec3-cd97-4db5-9980-7196de3b0468</xr:ValueId>
+				<xr:TypeId>38a60abe-ebcf-4c73-9f02-6153d70262ee</xr:TypeId>
+				<xr:ValueId>2b6a43f5-9fc0-4396-bc65-9ded21df9ff8</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterList.ТУРВ_Пользователи" category="List">
-				<xr:TypeId>359c2e60-6730-4a36-83d0-1fbb113b0e8e</xr:TypeId>
-				<xr:ValueId>5f8f643d-6f10-46e2-bfbc-3d65c509cc9f</xr:ValueId>
+				<xr:TypeId>0b6f5bf7-be38-4b4c-b626-ddc8fd481726</xr:TypeId>
+				<xr:ValueId>45c89665-6390-4525-b54b-e97db1787fbf</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordSet.ТУРВ_Пользователи" category="RecordSet">
-				<xr:TypeId>fa7b473c-aba1-459f-a461-efa6af32f972</xr:TypeId>
-				<xr:ValueId>7a19d697-b2a9-4bf5-8155-a50a1f46164e</xr:ValueId>
+				<xr:TypeId>89f88e56-d842-41a9-8a20-055026625908</xr:TypeId>
+				<xr:ValueId>2c20a665-3182-4f7f-a9fb-7b0dfa2264f3</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordKey.ТУРВ_Пользователи" category="RecordKey">
-				<xr:TypeId>fe0255f9-7ad0-4081-87ac-69ca03aa0c69</xr:TypeId>
-				<xr:ValueId>f5b936e1-5ff9-4ad5-aa97-8168c83c1425</xr:ValueId>
+				<xr:TypeId>2220a197-0c83-4ddc-a286-a22f365ffbae</xr:TypeId>
+				<xr:ValueId>a2a9ba12-24c4-4d2e-883d-b05383a640e6</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordManager.ТУРВ_Пользователи" category="RecordManager">
-				<xr:TypeId>5a86f397-b9ed-4972-bcd9-9c83dd46191f</xr:TypeId>
-				<xr:ValueId>53f7fbf3-06b1-4b47-8978-e6c2d0299e61</xr:ValueId>
+				<xr:TypeId>dcf7ea26-b09d-4790-807c-80867e8f09f2</xr:TypeId>
+				<xr:ValueId>a026eb8f-23f8-4754-9ade-a73823fa31c6</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пользователи ЛК (ЛК)</v8:content>
+					<v8:content>Пользователи </v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru1</v8:lang>
@@ -50,6 +50,112 @@
 			<DefaultListForm>InformationRegister.ТУРВ_Пользователи.Form.ФормаСписка</DefaultListForm>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Active">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="LineNumber">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Recorder">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Period">
+					<xr:LinkByType/>
+					<xr:FillChecking>ShowError</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
 			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
@@ -68,7 +174,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="ede3f037-6d3f-4e0b-b126-903dec0240d6">
+			<Resource uuid="e0de0e43-dc72-4116-9aa2-d077932f96d4">
 				<Properties>
 					<Name>id</Name>
 					<Synonym>
@@ -112,7 +218,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="09daa21a-a8a4-4770-8435-e9c79114482f">
+			<Resource uuid="f867ac9c-4140-4091-9e59-23b0e7c7608e">
 				<Properties>
 					<Name>Логин</Name>
 					<Synonym>
@@ -155,7 +261,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="384e13ef-ccd6-47de-a580-e6d776bd1a65">
+			<Resource uuid="89d82482-e651-4f2e-b920-c6cb6479455a">
 				<Properties>
 					<Name>Пароль</Name>
 					<Synonym>
@@ -198,7 +304,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Dimension uuid="aaf98d39-0d69-4904-951f-63a7d2f66f53">
+			<Dimension uuid="ea8d4353-e76b-45e7-ba1f-6b049df881d7">
 				<Properties>
 					<Name>ФизическоеЛицо</Name>
 					<Synonym>

@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<Catalog uuid="56cc5601-3d8c-46a6-bf83-663578fe0e6d">
+	<Catalog uuid="7b0e9f8d-df59-45c5-aad8-bea0656f50d0">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.ТУРВ_СтатусыТабелей" category="Object">
-				<xr:TypeId>534cc35a-4318-43be-a4b7-61b759367bab</xr:TypeId>
-				<xr:ValueId>3df1af4b-2ef9-41b1-8553-73198b0da23a</xr:ValueId>
+				<xr:TypeId>77a61896-4636-4691-854b-2ee8b8153b02</xr:TypeId>
+				<xr:ValueId>fff8028b-f266-49b7-bccc-e517fb87d050</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.ТУРВ_СтатусыТабелей" category="Ref">
-				<xr:TypeId>0e11ac5c-0991-4c80-9a21-01a1b13802d7</xr:TypeId>
-				<xr:ValueId>6e50def7-4474-43f0-80f3-5df925638954</xr:ValueId>
+				<xr:TypeId>279caceb-1971-4eaf-b4e3-a4548b1da2d3</xr:TypeId>
+				<xr:ValueId>0f132bd4-4369-40a0-9500-3d7a296c5ca9</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.ТУРВ_СтатусыТабелей" category="Selection">
-				<xr:TypeId>da0a8a76-9747-48f3-a253-ce1b39d8ab64</xr:TypeId>
-				<xr:ValueId>8c182f31-0a59-4ebd-a456-5843be72dfcf</xr:ValueId>
+				<xr:TypeId>f7edbcfa-2dfc-4650-9b4c-6326146ae908</xr:TypeId>
+				<xr:ValueId>348a3eb8-edae-450c-93b4-e91cb7b4faab</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.ТУРВ_СтатусыТабелей" category="List">
-				<xr:TypeId>9be18244-cbd8-45ea-b2a9-698389e5fd95</xr:TypeId>
-				<xr:ValueId>20b3ee4e-8471-486d-8048-8e3c49ae6b34</xr:ValueId>
+				<xr:TypeId>219a5bae-cb11-4bcb-b927-cca49fbfb27d</xr:TypeId>
+				<xr:ValueId>46e0a91e-a5d0-4085-9323-727ceabf8c76</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.ТУРВ_СтатусыТабелей" category="Manager">
-				<xr:TypeId>e0ab0583-64c8-47ae-97e2-059879e67373</xr:TypeId>
-				<xr:ValueId>5e12af86-8e4c-4a73-a774-b2d32c2a718c</xr:ValueId>
+				<xr:TypeId>a475ae88-9c6c-40e5-b86f-b84093e6dbff</xr:TypeId>
+				<xr:ValueId>300b659c-d200-4e6f-9aae-4438dd1520d0</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -28,7 +28,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Статусы заявок на справки (ЛК)</v8:content>
+					<v8:content>Статусы табелей</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru1</v8:lang>

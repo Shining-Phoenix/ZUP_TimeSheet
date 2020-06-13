@@ -19,7 +19,6 @@
 			<ExtendedTooltip name="ВидСобытияРасширеннаяПодсказка" id="3"/>
 		</InputField>
 		<InputField name="Описание" id="4">
-			<DataPath>1/0:c60c263f-4844-497b-8f2f-091e1546bd01</DataPath>
 			<ContextMenu name="ОписаниеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="6"/>
 		</InputField>

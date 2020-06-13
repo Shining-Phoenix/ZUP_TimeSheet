@@ -1,124 +1,127 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.9">
 	<ConfigVersions>
-		<Metadata name="AccumulationRegister.ДанныеИндивидуальныхГрафиковСотрудников" id="8953dacd-5761-4b19-88c4-e707e51cb270" configVersion="e7bbc2a0103bd3b6aa38d4b066d996e05ea2503c"/>
-		<Metadata name="AccumulationRegister.ДанныеИндивидуальныхГрафиковСотрудников.RecordSetModule" id="8953dacd-5761-4b19-88c4-e707e51cb270.1" configVersion="4100a6489f25c96738351044036e26417a84621e"/>
-		<Metadata name="AccumulationRegister.НачисленияУдержанияПоСотрудникам" id="eed555aa-0ed4-4b03-a9c0-520e87b6236f" configVersion="223b314eb7a7301761f8f9d064ed605fd3fda90b"/>
-		<Metadata name="AccumulationRegister.НачисленияУдержанияПоСотрудникам.RecordSetModule" id="eed555aa-0ed4-4b03-a9c0-520e87b6236f.1" configVersion="4100a6489f25c96738351044036e26417a84621e"/>
-		<Metadata name="Catalog.ВидыИспользованияРабочегоВремени" id="c8304d23-b3a9-4f32-adc1-032a035ae99f" configVersion="4eea767d48f09d02ba4340806579639e8e0bf6a9"/>
-		<Metadata name="Catalog.ВидыИспользованияРабочегоВремени.ObjectModule" id="c8304d23-b3a9-4f32-adc1-032a035ae99f.0" configVersion="99ad7be9a9eab50b362ed9bc628300e3e4da4b34"/>
-		<Metadata name="Catalog.ГрафикиРаботыСотрудников" id="71878203-3557-41a6-992f-3e5339238083" configVersion="a810de86f9f8694838f4920fca2259621fac1592"/>
-		<Metadata name="Catalog.ГрафикиРаботыСотрудников.ObjectModule" id="71878203-3557-41a6-992f-3e5339238083.0" configVersion="635ef44e6161098b229903125a3940f57dc970c5"/>
-		<Metadata name="Catalog.Должности" id="3e33d121-e54a-4235-a04d-00852a8d5f49" configVersion="fb73e53f6481796781138e7ab234702531131aa0"/>
-		<Metadata name="Catalog.Должности.ObjectModule" id="3e33d121-e54a-4235-a04d-00852a8d5f49.0" configVersion="99ad7be9a9eab50b362ed9bc628300e3e4da4b34"/>
-		<Metadata name="Catalog.Организации" id="0d8d6883-e40c-4c19-86d6-c6f848b56ea3" configVersion="511be967e895c00bb30794349c2d15e1bf402e6a"/>
-		<Metadata name="Catalog.Организации.ObjectModule" id="0d8d6883-e40c-4c19-86d6-c6f848b56ea3.0" configVersion="99ad7be9a9eab50b362ed9bc628300e3e4da4b34"/>
-		<Metadata name="Catalog.ПодразделенияОрганизаций" id="2c685730-50c5-4849-aece-cb82a5315d92" configVersion="f14342a53b9d5c5760e18720acd1baff719216dd"/>
-		<Metadata name="Catalog.ПодразделенияОрганизаций.ObjectModule" id="2c685730-50c5-4849-aece-cb82a5315d92.0" configVersion="99ad7be9a9eab50b362ed9bc628300e3e4da4b34"/>
-		<Metadata name="Catalog.Пользователи" id="a74e8cfb-305c-42da-b59a-0dbf2b0b7c7e" configVersion="f26df03226342509f2184b6e3bdeb02c8e31d720"/>
-		<Metadata name="Catalog.ТУРВ_СтатусыТабелей" id="56cc5601-3d8c-46a6-bf83-663578fe0e6d" configVersion="8f09fb5a4802b852dc1e2d074a0a2be4ca6524ce"/>
-		<Metadata name="Catalog.ТУРВ_СтатусыТабелей.Form.ФормаСписка" id="9d4fbb81-600f-42e9-bdff-2bac2a8d200a" configVersion="4d31ae64418c012ef3c7fcc12611d436996cc5a0"/>
-		<Metadata name="Catalog.ТУРВ_СтатусыТабелей.Form.ФормаСписка.Form" id="9d4fbb81-600f-42e9-bdff-2bac2a8d200a.0" configVersion="35ab2e84ffd22914cee8a82362f87f4b8ae4a132"/>
-		<Metadata name="Catalog.ТУРВ_СтатусыТабелей.Form.ФормаЭлемента" id="878dffff-5fe6-452e-be92-2e3e54507c6f" configVersion="e83dfb0dd7d504c3a3e3a96d704d771180b92502"/>
-		<Metadata name="Catalog.ТУРВ_СтатусыТабелей.Form.ФормаЭлемента.Form" id="878dffff-5fe6-452e-be92-2e3e54507c6f.0" configVersion="b7216b0c8c701d1fcfd7badb3140848f2372e03d"/>
-		<Metadata name="Catalog.ФизическиеЛица" id="f1bf22f5-4c45-4dc2-93b4-fc460f950521" configVersion="3c0b1664f39ffbb9daf4dd696c244273f86078b5"/>
-		<Metadata name="CommonModule.ТУРВ_ЛогированиеСервер" id="f3f38f8b-2780-4480-b6ba-145540678837" configVersion="6f3f3531a7a380cb6230a80e7f599352d880e2d0"/>
-		<Metadata name="CommonModule.ТУРВ_ЛогированиеСервер.Module" id="f3f38f8b-2780-4480-b6ba-145540678837.0" configVersion="0892585b780e301db2c5919aaccad99b6612b905"/>
-		<Metadata name="CommonModule.ТУРВ_ОбменДаннымиПовтИсп" id="89a588ca-347f-4bb9-a47a-8bb4a0c04e27" configVersion="6d6728ae68f58c5214796659abba6a347e972533"/>
-		<Metadata name="CommonModule.ТУРВ_ОбменДаннымиПовтИсп.Module" id="89a588ca-347f-4bb9-a47a-8bb4a0c04e27.0" configVersion="d69d96ebb14cfb45d8b68222a2b01ac9ae0aa0fc"/>
-		<Metadata name="CommonModule.ТУРВ_ОбменДаннымиСервер" id="40798dc0-cb1d-43f8-8592-8f9c4bf58cfa" configVersion="61b24b4806cc1b27b2b6b528f17f76fdd76d2bf8"/>
-		<Metadata name="CommonModule.ТУРВ_ОбменДаннымиСервер.Module" id="40798dc0-cb1d-43f8-8592-8f9c4bf58cfa.0" configVersion="b9e8e40a2dbbf0aad904760312b6f51fd42a2f68"/>
-		<Metadata name="CommonModule.ТУРВ_ОбработкаСобытийСервер" id="c564cfa0-7872-4699-9b6c-f5c49785dc08" configVersion="bf2d401d96d01d065e76171507ca6e8a1ace6aed"/>
-		<Metadata name="CommonModule.ТУРВ_ОбработкаСобытийСервер.Module" id="c564cfa0-7872-4699-9b6c-f5c49785dc08.0" configVersion="91e29c875a4c08699b079bffaba03cf84fad4ee0"/>
-		<Metadata name="CommonModule.ТУРВ_ОбщегоНазначенияВызовСервера" id="fae9975b-31c6-4c96-84cd-e0563f8fa3fd" configVersion="fa9903bc451ce971759bd22a43c60884a35258cd"/>
-		<Metadata name="CommonModule.ТУРВ_ОбщегоНазначенияВызовСервера.Module" id="fae9975b-31c6-4c96-84cd-e0563f8fa3fd.0" configVersion="667d5f257517cbb88a1cf1df491f48adbba43da6"/>
-		<Metadata name="CommonModule.ТУРВ_РаботаСJSONСервер" id="a6625281-af8c-4623-9a06-16f743375cc7" configVersion="8215ad8143347d6e8eba519a151bf412c6763b85"/>
-		<Metadata name="CommonModule.ТУРВ_РаботаСJSONСервер.Module" id="a6625281-af8c-4623-9a06-16f743375cc7.0" configVersion="e97f57c7f2ddc152077aae0631d0939b427eb182"/>
-		<Metadata name="CommonModule.ТУРВ_РаботаСФункциямиКлиентСервер" id="e6a9727d-befa-4c63-9697-aa1a85a2150f" configVersion="9c6e47fd58f889d2bae4ecd5f64c6cd2d4090a9c"/>
-		<Metadata name="CommonModule.ТУРВ_РаботаСФункциямиКлиентСервер.Module" id="e6a9727d-befa-4c63-9697-aa1a85a2150f.0" configVersion="30a47dba9ea2f6a61c7d920e81f2897b234ad266"/>
-		<Metadata name="Configuration.ZUP_TimeSheet" id="1b9eaada-ae35-4b7a-b392-91b9b4894192" configVersion="751a44c128486aa96fa8e179d48691e45f745d96"/>
-		<Metadata name="Configuration.ZUP_TimeSheet.ManagedApplicationModule" id="8767be3d-f7a1-41f9-99ef-5123d9adec4e.6" configVersion="4847a23e9a87f99f81328f7335882f5b58fb75d1"/>
-		<Metadata name="DataProcessor.ТУРВ_Администрирование" id="599f5fa6-a7b7-4bb3-a50a-358d89cc3189" configVersion="2594b6c9ac3eab31f897fa9cf1f989f0f6603d5a">
-			<Metadata name="DataProcessor.ТУРВ_Администрирование.Attribute.Пароль" id="67187821-8371-4fff-b278-c3e91a2d5b9c"/>
-			<Metadata name="DataProcessor.ТУРВ_Администрирование.Attribute.Логин" id="ba03e0f6-6fe0-45ab-a3d6-0095be74c2b1"/>
-			<Metadata name="DataProcessor.ТУРВ_Администрирование.Attribute.Пользователь" id="ba281836-0116-4e46-b548-dd6fd0b48a96"/>
+		<Metadata name="AccumulationRegister.ДанныеИндивидуальныхГрафиковСотрудников" id="6b8d62e2-dd70-4f3b-b48a-14714070124a" configVersion="38274c4d2e1121e9065c054d56d2463f97dd08dd"/>
+		<Metadata name="AccumulationRegister.ДанныеИндивидуальныхГрафиковСотрудников.RecordSetModule" id="6b8d62e2-dd70-4f3b-b48a-14714070124a.1" configVersion="a25a0bbfd0933c40bb4398d7456e5c1d4799257f"/>
+		<Metadata name="AccumulationRegister.НачисленияУдержанияПоСотрудникам" id="5b49e1ff-5a5a-495c-b692-f813150c58c6" configVersion="ce13dcb46aa2784c03cab01999f47f38d7ef4cb4"/>
+		<Metadata name="AccumulationRegister.НачисленияУдержанияПоСотрудникам.RecordSetModule" id="5b49e1ff-5a5a-495c-b692-f813150c58c6.1" configVersion="a25a0bbfd0933c40bb4398d7456e5c1d4799257f"/>
+		<Metadata name="Catalog.ВидыИспользованияРабочегоВремени" id="73ef1d55-4216-4d59-acf0-1a986527d2db" configVersion="fe4cef0a92973933fe339141c7c78cc4113b8bc8"/>
+		<Metadata name="Catalog.ВидыИспользованияРабочегоВремени.ObjectModule" id="73ef1d55-4216-4d59-acf0-1a986527d2db.0" configVersion="13166a3c275317f1ddd85c30464467b271163766"/>
+		<Metadata name="Catalog.ГрафикиРаботыСотрудников" id="fee122e9-db5e-4cd8-94da-aeedc3b4ce4c" configVersion="72b1815dc97951b881ff319e537129f7f829cec8"/>
+		<Metadata name="Catalog.ГрафикиРаботыСотрудников.ObjectModule" id="fee122e9-db5e-4cd8-94da-aeedc3b4ce4c.0" configVersion="29a644ba09834f9950ec03d984ce6fe3c9a5b73f"/>
+		<Metadata name="Catalog.Должности" id="fb52e2fb-4f9f-49ce-ba05-105f9202d3c2" configVersion="0beaae327708d733009212fef7cec0e2475a952c"/>
+		<Metadata name="Catalog.Должности.ObjectModule" id="fb52e2fb-4f9f-49ce-ba05-105f9202d3c2.0" configVersion="4974a98f57179e1a3b1a6a0481d8c9e06146efff"/>
+		<Metadata name="Catalog.Организации" id="bdc6589d-f370-452f-957c-a7cd93332e30" configVersion="2f283387c06c0e7b48133a4f1cd00d884cbb907d"/>
+		<Metadata name="Catalog.Организации.ObjectModule" id="bdc6589d-f370-452f-957c-a7cd93332e30.0" configVersion="29a644ba09834f9950ec03d984ce6fe3c9a5b73f"/>
+		<Metadata name="Catalog.ПодразделенияОрганизаций" id="30d09ca8-9c4e-471a-8787-e89cc544d4f7" configVersion="6c50602d6427152c2437ef3d7b67b5cb39079926"/>
+		<Metadata name="Catalog.ПодразделенияОрганизаций.ObjectModule" id="30d09ca8-9c4e-471a-8787-e89cc544d4f7.0" configVersion="bef5df7ca1bd85dd06f43dc1a2cc29af88341ae4"/>
+		<Metadata name="Catalog.Пользователи" id="c0f2c47a-b23a-4820-8523-5d4d621faa63" configVersion="232385cf87763bfd38a5a7dfe73e659a9ed1c0fe"/>
+		<Metadata name="Catalog.ТУРВ_СтатусыТабелей" id="7b0e9f8d-df59-45c5-aad8-bea0656f50d0" configVersion="71a1bfa4688418de3f904135e9e9d17a468d7925"/>
+		<Metadata name="Catalog.ТУРВ_СтатусыТабелей.Form.ФормаСписка" id="20511824-c673-449a-baf1-faf0bd6eb465" configVersion="a4902308a823b679e7ff10f52e4217b472f72fa3"/>
+		<Metadata name="Catalog.ТУРВ_СтатусыТабелей.Form.ФормаСписка.Form" id="20511824-c673-449a-baf1-faf0bd6eb465.0" configVersion="b9b511f8c7b7bfbc8b06a50bd1c1f17391acac75"/>
+		<Metadata name="Catalog.ТУРВ_СтатусыТабелей.Form.ФормаЭлемента" id="3b19b300-b57a-48e0-8c4f-9e11a174123c" configVersion="e459e80a6c4c1b1e6faa88757043f0d27b37a7c2"/>
+		<Metadata name="Catalog.ТУРВ_СтатусыТабелей.Form.ФормаЭлемента.Form" id="3b19b300-b57a-48e0-8c4f-9e11a174123c.0" configVersion="45f2e789de09d54454c03d044b300e6bf6e4f7fb"/>
+		<Metadata name="Catalog.ФизическиеЛица" id="edd67c79-31e1-4f25-bc4e-0200c2766420" configVersion="b8171b6ff1e731b80671e225cb2234bac2240670"/>
+		<Metadata name="Catalog.ФизическиеЛица.ObjectModule" id="edd67c79-31e1-4f25-bc4e-0200c2766420.0" configVersion="171fb6c1261d259bdff334494cb7b9bf12955b93"/>
+		<Metadata name="CommonModule.ТУРВ_ЛогированиеСервер" id="66071bb0-c771-4751-9d6a-f7192113d55a" configVersion="055bbdc8241f9f3d5a2b0c8d3510f2b673725f39"/>
+		<Metadata name="CommonModule.ТУРВ_ЛогированиеСервер.Module" id="66071bb0-c771-4751-9d6a-f7192113d55a.0" configVersion="09ca32a3605bb41bce7e9c55d164c8f1598a0230"/>
+		<Metadata name="CommonModule.ТУРВ_ОбменДаннымиПовтИсп" id="465979ff-47b5-4ac5-9027-7b53609a68c0" configVersion="3a30230a40c2389af1380f7c223ca681f8be53f2"/>
+		<Metadata name="CommonModule.ТУРВ_ОбменДаннымиПовтИсп.Module" id="465979ff-47b5-4ac5-9027-7b53609a68c0.0" configVersion="a2c3b8736ecaf1e4031e0b5788db446c6a13c3e7"/>
+		<Metadata name="CommonModule.ТУРВ_ОбменДаннымиСервер" id="f023ed85-18c2-4e25-93ab-84be620b67e9" configVersion="4fbf4f8a583d4480ffbd964da7254e0ca04eb3af"/>
+		<Metadata name="CommonModule.ТУРВ_ОбменДаннымиСервер.Module" id="f023ed85-18c2-4e25-93ab-84be620b67e9.0" configVersion="cc18016f48261bfcd2af80ba5a27c3ad9fb64835"/>
+		<Metadata name="CommonModule.ТУРВ_ОбработкаСобытийСервер" id="46271b83-a381-4b1a-aaca-e493459cbd6e" configVersion="9bd7eb41878902e70e04b8f334e33e39a2bc7cea"/>
+		<Metadata name="CommonModule.ТУРВ_ОбработкаСобытийСервер.Module" id="46271b83-a381-4b1a-aaca-e493459cbd6e.0" configVersion="443dd34742170115e12ea6994eb42487f18456a5"/>
+		<Metadata name="CommonModule.ТУРВ_ОбщегоНазначенияВызовСервера" id="b4734bdc-be77-4eaa-ad14-8d6b84cbb031" configVersion="45e236ecd1372297d27efcd38985919bebc5d941"/>
+		<Metadata name="CommonModule.ТУРВ_ОбщегоНазначенияВызовСервера.Module" id="b4734bdc-be77-4eaa-ad14-8d6b84cbb031.0" configVersion="e94d7c67dccaa52a34629c34e8531ff2056fa3c1"/>
+		<Metadata name="CommonModule.ТУРВ_РаботаСJSONСервер" id="8e13bf92-b82b-4d94-92a7-a2325ef2af1a" configVersion="8ba5b5106cea4a799857586bde8f9e7bd31361bc"/>
+		<Metadata name="CommonModule.ТУРВ_РаботаСJSONСервер.Module" id="8e13bf92-b82b-4d94-92a7-a2325ef2af1a.0" configVersion="548889c7b39c46fa8f8f96f483d4e40049120871"/>
+		<Metadata name="CommonModule.ТУРВ_РаботаСФункциямиКлиентСервер" id="7bb0b2f5-6e61-407a-a6e3-1b9a43c6062a" configVersion="634e5f0503a77e1def486405d785896e6f73ec23"/>
+		<Metadata name="CommonModule.ТУРВ_РаботаСФункциямиКлиентСервер.Module" id="7bb0b2f5-6e61-407a-a6e3-1b9a43c6062a.0" configVersion="20fda974f2bdbbcd4f28d41270ba89c6d70e4c4d"/>
+		<Metadata name="CommonPicture.Документация" id="0ab360a0-840a-46e9-8092-ba2f4aa2edd7" configVersion="e538aaed10d5b40a683b01f8f8e84630014a14be"/>
+		<Metadata name="Configuration.ZUP_TimeSheet" id="99ab9cda-56c5-4f4b-8ceb-f7de2f8ece9b" configVersion="3a4b8ea0b74ee5f85c2207b41c1ea04867eebf04"/>
+		<Metadata name="Configuration.ZUP_TimeSheet.ManagedApplicationModule" id="37e2d8f0-5e47-4b49-84d0-ff8d7ef4c2e2.6" configVersion="1e9e59f784254c9a26bb40c70b759d10570312a4"/>
+		<Metadata name="DataProcessor.ТУРВ_Администрирование" id="af15164a-cd49-4dac-86e0-96775cbf5ba9" configVersion="73a8271619854e2edbff8ae595fbce4bafe9699d">
+			<Metadata name="DataProcessor.ТУРВ_Администрирование.Attribute.Пароль" id="4bab399b-a299-4593-a756-a8724807f253"/>
+			<Metadata name="DataProcessor.ТУРВ_Администрирование.Attribute.Пользователь" id="dd93509d-d126-485c-be27-2b35dfbaf48c"/>
+			<Metadata name="DataProcessor.ТУРВ_Администрирование.Attribute.Логин" id="e955eff5-5f9b-47f8-9049-bdeb90c606e1"/>
 		</Metadata>
-		<Metadata name="DataProcessor.ТУРВ_Администрирование.Form.Форма" id="13593289-ef2b-40c3-8598-60688a21a0a0" configVersion="885aa43cbb0d2e5cf423a5d116845255f0492f81"/>
-		<Metadata name="DataProcessor.ТУРВ_Администрирование.Form.Форма.Form" id="13593289-ef2b-40c3-8598-60688a21a0a0.0" configVersion="e729b07e74eb1519ddf670408064e015a75aee86"/>
-		<Metadata name="Enum.ТУРВ_ВидыСобытийСОбъектамиЛК" id="eafff92c-0548-4ba6-a55e-a6a526a7d32b" configVersion="0c7cb90b340390f1349e80385a070a44e04e9b69">
-			<Metadata name="Enum.ТУРВ_ВидыСобытийСОбъектамиЛК.EnumValue.Изменение" id="1e854706-1a53-48ac-b073-4306fac09423"/>
-			<Metadata name="Enum.ТУРВ_ВидыСобытийСОбъектамиЛК.EnumValue.Добавление" id="43763e49-4ecf-4d48-8954-0f5f3d02aad3"/>
-			<Metadata name="Enum.ТУРВ_ВидыСобытийСОбъектамиЛК.EnumValue.Удаление" id="fb82ca95-1ab2-4d33-a49d-9dad0f3784cb"/>
+		<Metadata name="DataProcessor.ТУРВ_Администрирование.Form.Форма" id="67ccfb55-52d9-4a8a-ad74-75536a104898" configVersion="790b9fdd740a0edfbc984b35bed4702e8b4c7b89"/>
+		<Metadata name="DataProcessor.ТУРВ_Администрирование.Form.Форма.Form" id="67ccfb55-52d9-4a8a-ad74-75536a104898.0" configVersion="d8b7502871e2da58c9a894f04b04f5ae511929a3"/>
+		<Metadata name="Enum.ТУРВ_ВидыСобытийСОбъектамиЛК" id="08b35465-c7f5-49ae-918b-5d7532e9c096" configVersion="ab680ba2ad883092dd6527c2f5f47a1c9cab7b9a">
+			<Metadata name="Enum.ТУРВ_ВидыСобытийСОбъектамиЛК.EnumValue.Изменение" id="1084b493-7d88-42ac-a06c-20440c9554d9"/>
+			<Metadata name="Enum.ТУРВ_ВидыСобытийСОбъектамиЛК.EnumValue.Добавление" id="38c66702-9e09-4519-8c61-a241f2c036ec"/>
+			<Metadata name="Enum.ТУРВ_ВидыСобытийСОбъектамиЛК.EnumValue.Удаление" id="925dbcad-9a28-418c-b7ef-218d4620206a"/>
 		</Metadata>
-		<Metadata name="Enum.ТУРВ_СтатусОбменаСЛК" id="64cfdf34-f9ab-4e0c-8c45-f74538c40f96" configVersion="36a85bfb78fce499a68b869d6a517a0aca5f9ddb">
-			<Metadata name="Enum.ТУРВ_СтатусОбменаСЛК.EnumValue.Ошибка" id="17df3ad9-b632-4397-9f72-f5774292057b"/>
-			<Metadata name="Enum.ТУРВ_СтатусОбменаСЛК.EnumValue.Выполнен" id="48b09c2c-8005-451f-80bc-03106b0867e2"/>
-			<Metadata name="Enum.ТУРВ_СтатусОбменаСЛК.EnumValue.Новый" id="a1f58133-bff1-4e39-b7fd-bd266bf8bd06"/>
+		<Metadata name="Enum.ТУРВ_СтатусОбменаСЛК" id="26a32f37-3b60-4a3b-8bdc-c177259a0b7e" configVersion="8d094d6d9ceaf8f23a04731075da315a5c0b58c1">
+			<Metadata name="Enum.ТУРВ_СтатусОбменаСЛК.EnumValue.Новый" id="4221b0cd-6639-4872-b5c0-de97331fa034"/>
+			<Metadata name="Enum.ТУРВ_СтатусОбменаСЛК.EnumValue.Выполнен" id="46f2ced9-f4e3-4a95-b73a-d6fc84269f2e"/>
+			<Metadata name="Enum.ТУРВ_СтатусОбменаСЛК.EnumValue.Ошибка" id="56e9dec2-b93d-4939-9989-5d5b0a803bc0"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ГрафикРаботыСотрудников" id="6bd4cb8e-3e71-4ad9-ac1f-d0417d2fa039" configVersion="e73d4b7ba3e3687a44bc7ce98a866d7629c95f88"/>
-		<Metadata name="InformationRegister.ГрафикРаботыСотрудников.RecordSetModule" id="6bd4cb8e-3e71-4ad9-ac1f-d0417d2fa039.1" configVersion="6db61a7cc0baa449dcc2fe70bb59d232af8be1ea"/>
-		<Metadata name="InformationRegister.ГрафикиРаботыПоВидамВремени" id="6cf85cc2-3baa-43a6-96e1-071d031f5b0d" configVersion="01ad2bce6ba5132f2429e5f70434110001d8cf33"/>
-		<Metadata name="InformationRegister.ГрафикиРаботыПоВидамВремени.RecordSetModule" id="6cf85cc2-3baa-43a6-96e1-071d031f5b0d.1" configVersion="6db61a7cc0baa449dcc2fe70bb59d232af8be1ea"/>
-		<Metadata name="InformationRegister.КадроваяИсторияСотрудников" id="64fb53ae-cb2d-4229-bab3-49e348eecc16" configVersion="ea1042c81ba2471292c8f6607b5f7d34e7eab1a5"/>
-		<Metadata name="InformationRegister.КадроваяИсторияСотрудников.RecordSetModule" id="64fb53ae-cb2d-4229-bab3-49e348eecc16.1" configVersion="6db61a7cc0baa449dcc2fe70bb59d232af8be1ea"/>
-		<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса" id="8e3221de-b78e-40d4-abc2-5cf133066c68" configVersion="223bdd3f5ce6177850a6d2c50b09a3401d19f158">
-			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Resource.УровеньЛогирования" id="1e34078b-aa52-4a08-8a73-64cf3518c11f"/>
-			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Dimension.ПарольПользователя" id="5b7d5fa3-c22c-4882-afc8-9c49b08a112c"/>
-			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Dimension.ИДБазы" id="683ea731-736e-4e65-a3fb-14d82a6babee"/>
-			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Dimension.ЛогинПользователя" id="73131fb9-cfb6-4a0f-9e75-64e61e2db41e"/>
-			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Dimension.АдресСервера" id="ecc8ce5f-3cb7-48ac-9ac4-8ff321799537"/>
+		<Metadata name="InformationRegister.ГрафикРаботыСотрудников" id="6313d171-ba10-4c39-a1b4-5f64555585eb" configVersion="1ded2a2c69cdce43626b338174e685121e4d5b54"/>
+		<Metadata name="InformationRegister.ГрафикРаботыСотрудников.RecordSetModule" id="6313d171-ba10-4c39-a1b4-5f64555585eb.1" configVersion="04db5fc4c5b4f7483b66a5d36f87b1cc72930dcb"/>
+		<Metadata name="InformationRegister.ГрафикиРаботыПоВидамВремени" id="ce8d8010-34cb-4ca3-817e-8d691d2bbd28" configVersion="7135ba1aeec5c5ab6e01b146020d7834a041dca0"/>
+		<Metadata name="InformationRegister.ГрафикиРаботыПоВидамВремени.RecordSetModule" id="ce8d8010-34cb-4ca3-817e-8d691d2bbd28.1" configVersion="04db5fc4c5b4f7483b66a5d36f87b1cc72930dcb"/>
+		<Metadata name="InformationRegister.КадроваяИсторияСотрудников" id="760c48e5-28d0-4ec4-aca7-17912b1f3956" configVersion="2d7c8c250553ca439a288e4f774a9885351dbebd"/>
+		<Metadata name="InformationRegister.КадроваяИсторияСотрудников.RecordSetModule" id="760c48e5-28d0-4ec4-aca7-17912b1f3956.1" configVersion="41ef2fae6964c9a4a5e200fbde3e3474f66d6a60"/>
+		<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса" id="e55f0b38-0a79-40a1-8eae-64b6658f881f" configVersion="cf9cbcd02154b0dd343add6f2d848223daf6f0a9">
+			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Dimension.ИДБазы" id="054e1645-2530-4378-b542-f7befec56ce4"/>
+			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Dimension.АдресСервера" id="475ad824-3d05-4d03-8f47-6634c6640976"/>
+			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Dimension.ПарольПользователя" id="4960cf37-a86c-4d41-a9e8-9a579bab9075"/>
+			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Resource.УровеньЛогирования" id="56c0d3b5-762d-4ded-9bf7-e97d837df8d7"/>
+			<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Dimension.ЛогинПользователя" id="924290fc-5d03-4410-904b-efad9b85092d"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Form.ФормаЗаписи" id="28a95ed8-c22d-4343-ac3f-7925def1cbf9" configVersion="b04e4db7f1e624e597c70d98dbc34443930ffba2"/>
-		<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Form.ФормаЗаписи.Form" id="28a95ed8-c22d-4343-ac3f-7925def1cbf9.0" configVersion="b15c9ab8022e2a52d7e9e99cad50f5c8c4202559"/>
-		<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.ManagerModule" id="8e3221de-b78e-40d4-abc2-5cf133066c68.2" configVersion="e5333df57cb4869b97e4a9b2d5100ea7841a1c14"/>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными" id="47175bbc-bf0c-4a85-be36-07da02c2f8a1" configVersion="a6db6e7184297b063b390acc639a12d7542ffdb7">
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Dimension.ХЭШ" id="3d14be2e-8e2d-4af3-b81f-1413afa15069"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Dimension.ВидСобытия" id="6256cb6c-c97f-4c2d-b728-b17f117686df"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Dimension.ИмяОбъекта" id="6386319f-ab22-4d55-9313-1115cf873851"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Resource.Статус" id="934379eb-55bc-459f-a615-27bd5f962e2d"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Dimension.ТипОбъкта" id="a7a6ca0a-f100-490a-b53d-aff9bb3f7fb2"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Resource.Данные" id="b7b916c0-3671-47e7-aaef-23388c32d0e5"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Attribute.ДатаСобытия" id="e0d63d85-b3a4-412b-9b2f-e3d5392e5ebe"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Attribute.ИД" id="e70a5e51-43d1-4b92-9876-145b74c9b500"/>
+		<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Form.ФормаЗаписи" id="5b7a8701-083d-4145-b011-f6ba045f053d" configVersion="74a7322d565815ae4d820df833c9df8942df40d0"/>
+		<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.Form.ФормаЗаписи.Form" id="5b7a8701-083d-4145-b011-f6ba045f053d.0" configVersion="61bfe7aec96f8008c1e120481312b02bf28d9d2d"/>
+		<Metadata name="InformationRegister.ТУРВ_НастройкиСервиса.ManagerModule" id="e55f0b38-0a79-40a1-8eae-64b6658f881f.2" configVersion="e346f65730ff66213dc5a4e441a38f5777d494af"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными" id="da999e57-a183-42c7-9f99-dfe4e63d1499" configVersion="1fa2ab07dc3eb0dcb6829b3621fea515098d7fe2">
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Attribute.ДатаСобытия" id="0e699530-fb17-4751-9ed9-053e82ae78db"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Attribute.ИД" id="2478c026-f88c-4b03-80fd-49672fb9c50a"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Dimension.ИмяОбъекта" id="33ff35d6-adba-40f4-8080-524e063cb35b"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Dimension.ТипОбъкта" id="7e41c111-f26b-4a8b-8cf3-84524e9fc5cd"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Dimension.ВидСобытия" id="80986c37-bd23-45da-bf27-f8a812b43628"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Dimension.ХЭШ" id="d0f21fe4-472b-4001-a320-515fd2de2e27"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Resource.Данные" id="e74e4c65-f44d-4269-b8ff-7b7e39f257f3"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Resource.Статус" id="ffc844e4-1ba5-47ee-9644-aa3eb0ea1c1f"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Form.ФормаЗаписи" id="b581359b-de12-4228-92fa-1aedf1b4bf97" configVersion="fd5ae545664e0806c8991b10840109ca62c2cd20"/>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Form.ФормаЗаписи.Form" id="b581359b-de12-4228-92fa-1aedf1b4bf97.0" configVersion="fc175ff7430cc65367f20e269b7428b9865c98f8"/>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Form.ФормаСписка" id="00642503-adb0-4da6-9bdf-f892f714907b" configVersion="5bc8d976c48b3a038a7ab06997c9f886a78141d3"/>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Form.ФормаСписка.Form" id="00642503-adb0-4da6-9bdf-f892f714907b.0" configVersion="5a776e5a19c240b810d8e6ff54d531d837ae2894"/>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.ManagerModule" id="47175bbc-bf0c-4a85-be36-07da02c2f8a1.2" configVersion="ebb18382d9f11e4128c4ac9966e814c48abe5326"/>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными" id="1ac4f08c-732b-4d3b-bcca-949f2e1560e6" configVersion="e0ba4128c75dbe9e56e842c0d75fc8596ddddd98">
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Dimension.Объект" id="5ba509d0-5041-4c47-8fdb-0da354771142"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Attribute.ДатаСобытия" id="6c7283f1-8c33-42b8-a7e0-9ce8c3354bf0"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Attribute.ИД" id="90892cca-7abf-4225-a5ef-fe16bc9baf2b"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Dimension.ВидСобытия" id="b16694c7-ff4a-4b01-bd54-81e4e076351c"/>
-			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Resource.Статус" id="ea894b91-1f11-4bdd-8a7f-a9d7bf1cadcd"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Form.ФормаЗаписи" id="46b16236-f683-47b2-b3c4-bb9338775a84" configVersion="09afdcc518e24a9e7ae84556482cb5ad8e3a5268"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Form.ФормаЗаписи.Form" id="46b16236-f683-47b2-b3c4-bb9338775a84.0" configVersion="584d67e9ff3035207090050605db947fed9a0de0"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Form.ФормаСписка" id="2e87d6ac-548c-4ce2-ba56-b1306528aaad" configVersion="4282b7cf009fed1b62471e69911c2f3f94d5f3e2"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Form.ФормаСписка.Form" id="2e87d6ac-548c-4ce2-ba56-b1306528aaad.0" configVersion="2adf21d1b9763d2f7429daa8cfd75378b9d6c6cf"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.ManagerModule" id="da999e57-a183-42c7-9f99-dfe4e63d1499.2" configVersion="6df2eeca2ed9e31e81341c77e4f4cd2132ed164d"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными" id="d01814e8-44b2-4e9e-ad83-01fdf1bfde88" configVersion="5d5e22e2022596782dee113e04dcd64484534c1c">
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Resource.Статус" id="09230f1a-8bb3-49ba-8aa1-f5fa52e409d6"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Dimension.Объект" id="26e975ec-eb36-4f28-86fe-ae0ddfbe9534"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Attribute.ИД" id="882c4e26-3d5b-44f4-8ce8-ab6a6bfe3673"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Attribute.ДатаСобытия" id="b6c59db0-ceb4-44a4-8f2d-ec93e2cc8ad7"/>
+			<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Dimension.ВидСобытия" id="cb5fbb78-7426-4482-a73d-4982cbd750c2"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Form.ФормаСписка" id="2e84856c-4c5d-4492-9831-5e93af6b1fd2" configVersion="f24ba9691e14bc9b8d8acb409a717a277a0b843d"/>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Form.ФормаСписка.Form" id="2e84856c-4c5d-4492-9831-5e93af6b1fd2.0" configVersion="2639135a2d56f382b9288525e413d2e1ee255ce5"/>
-		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.ManagerModule" id="1ac4f08c-732b-4d3b-bcca-949f2e1560e6.2" configVersion="f1143e2a3fdba8ede16ac746e7616c35efaa6a3e"/>
-		<Metadata name="InformationRegister.ТУРВ_Пользователи" id="6eff5c2b-7f0a-410a-9536-2f5755f0638e" configVersion="420e155feab9841958d5b8c4ff86d2f033b444f2">
-			<Metadata name="InformationRegister.ТУРВ_Пользователи.Resource.Логин" id="09daa21a-a8a4-4770-8435-e9c79114482f"/>
-			<Metadata name="InformationRegister.ТУРВ_Пользователи.Resource.Пароль" id="384e13ef-ccd6-47de-a580-e6d776bd1a65"/>
-			<Metadata name="InformationRegister.ТУРВ_Пользователи.Dimension.ФизическоеЛицо" id="aaf98d39-0d69-4904-951f-63a7d2f66f53"/>
-			<Metadata name="InformationRegister.ТУРВ_Пользователи.Resource.id" id="ede3f037-6d3f-4e0b-b126-903dec0240d6"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Form.ФормаСписка" id="b193fdf8-7c05-4142-8bed-dfb4fc754ac8" configVersion="22113c8ebc539f8f48339c72a17cc8d8c38e1bc3"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.Form.ФормаСписка.Form" id="b193fdf8-7c05-4142-8bed-dfb4fc754ac8.0" configVersion="f2eb507c446d6472a4673f1ad04912b855132ceb"/>
+		<Metadata name="InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными.ManagerModule" id="d01814e8-44b2-4e9e-ad83-01fdf1bfde88.2" configVersion="264674ab1b13fed1458d5995b64269d87f7a9595"/>
+		<Metadata name="InformationRegister.ТУРВ_Пользователи" id="497b552c-96b2-4551-acde-78b99306b5d5" configVersion="f9ff03ad6ea9b82473f8aa13cd3df8adc1ffd357">
+			<Metadata name="InformationRegister.ТУРВ_Пользователи.Resource.Пароль" id="89d82482-e651-4f2e-b920-c6cb6479455a"/>
+			<Metadata name="InformationRegister.ТУРВ_Пользователи.Resource.id" id="e0de0e43-dc72-4116-9aa2-d077932f96d4"/>
+			<Metadata name="InformationRegister.ТУРВ_Пользователи.Dimension.ФизическоеЛицо" id="ea8d4353-e76b-45e7-ba1f-6b049df881d7"/>
+			<Metadata name="InformationRegister.ТУРВ_Пользователи.Resource.Логин" id="f867ac9c-4140-4091-9e59-23b0e7c7608e"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ТУРВ_Пользователи.Form.ФормаЗаписи" id="81c6f9e5-ded2-4e78-b6f3-1a55c7bc9cd8" configVersion="544b3f9cb5a96414cddb3b53ccaf731e361028e1"/>
-		<Metadata name="InformationRegister.ТУРВ_Пользователи.Form.ФормаЗаписи.Form" id="81c6f9e5-ded2-4e78-b6f3-1a55c7bc9cd8.0" configVersion="9537256cd55ff7fcb21ee2b9387e294071f91172"/>
-		<Metadata name="InformationRegister.ТУРВ_Пользователи.Form.ФормаСписка" id="c1fd854e-0147-4af9-b042-539f64efdd08" configVersion="2c34906542bb71d81ba368eb66cfefa0c4e81382"/>
-		<Metadata name="InformationRegister.ТУРВ_Пользователи.Form.ФормаСписка.Form" id="c1fd854e-0147-4af9-b042-539f64efdd08.0" configVersion="b916d024db7c861519d13b8bd4890933b73055e8"/>
-		<Metadata name="InformationRegister.ТУРВ_СоответствиеОбъектовДляОбмена" id="0b4f3a96-e144-47c9-8627-c85cb53a29eb" configVersion="243e6f1e481027c5db781ca809863488a990d5a8">
-			<Metadata name="InformationRegister.ТУРВ_СоответствиеОбъектовДляОбмена.Dimension.Объект" id="75f83712-3462-43f0-9740-9169f7a10153"/>
-			<Metadata name="InformationRegister.ТУРВ_СоответствиеОбъектовДляОбмена.Resource.КлючОбъекта" id="cada05ea-2267-49da-97bb-8fded28a0313"/>
+		<Metadata name="InformationRegister.ТУРВ_Пользователи.Form.ФормаЗаписи" id="d92682ba-7118-4c39-84da-26fcda754f30" configVersion="b8a7724cf8da015ddb3226144d441bef08431925"/>
+		<Metadata name="InformationRegister.ТУРВ_Пользователи.Form.ФормаЗаписи.Form" id="d92682ba-7118-4c39-84da-26fcda754f30.0" configVersion="4ce0051d75903d45e21acf17143c0042ee7a506e"/>
+		<Metadata name="InformationRegister.ТУРВ_Пользователи.Form.ФормаСписка" id="1a01e01b-a921-4c13-a360-7c7dd5cbd053" configVersion="5ba4202c5074ff073050f2e3e99cb81f2b6c92d3"/>
+		<Metadata name="InformationRegister.ТУРВ_Пользователи.Form.ФормаСписка.Form" id="1a01e01b-a921-4c13-a360-7c7dd5cbd053.0" configVersion="cc75522271e631104bfdc338084ebc9b04755bf5"/>
+		<Metadata name="InformationRegister.ТУРВ_СоответствиеОбъектовДляОбмена" id="996f9d96-af6d-4c8d-846c-925a6e02b890" configVersion="7c287c57e85ab63c657d42ddfaf396190b3696d0">
+			<Metadata name="InformationRegister.ТУРВ_СоответствиеОбъектовДляОбмена.Resource.КлючОбъекта" id="d9b51ab8-41d2-4b24-9dcc-e32047c66a8e"/>
+			<Metadata name="InformationRegister.ТУРВ_СоответствиеОбъектовДляОбмена.Dimension.Объект" id="e102a5f2-970d-4e6c-bc5f-d4b3f3bb2224"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ФотографииФизическихЛиц" id="38be48fe-8399-4f06-80e0-e45380b2e95c" configVersion="056fefb7918e687c42f5c74dea5377ff4b24692d"/>
-		<Metadata name="InformationRegister.ФотографииФизическихЛиц.RecordSetModule" id="38be48fe-8399-4f06-80e0-e45380b2e95c.1" configVersion="6db61a7cc0baa449dcc2fe70bb59d232af8be1ea"/>
-		<Metadata name="Language.Русский" id="8795b39d-58b1-4a38-aaa6-786f36dc4555" configVersion="82069a770085c345dbb55f9daa662edf1af2b801"/>
-		<Metadata name="Role.ТУРВ_Администратор" id="1d7632a0-a5b6-4c52-897f-36db2ece8fa9" configVersion="3c15add37d55a4526da8738812f89abd0f23fd76"/>
-		<Metadata name="Role.ТУРВ_Администратор.Rights" id="1d7632a0-a5b6-4c52-897f-36db2ece8fa9.0" configVersion="1f7570617b2194627d0cbd252259aed94c83e9ad"/>
-		<Metadata name="Role.ТУРВ_Пользователь" id="b03758b2-d09d-4c52-a2e6-12f226ed13e3" configVersion="1feec2569b50bdbd8b6da4720c5987773f273a83"/>
-		<Metadata name="Role.ТУРВ_Пользователь.Rights" id="b03758b2-d09d-4c52-a2e6-12f226ed13e3.0" configVersion="cb1055e98e826eeccbdf95cdc8ae95952408594f"/>
-		<Metadata name="Subsystem.ТУРВ_ТабелированиеСотрудников" id="d8ceeb4f-8fa4-4646-83e1-3c452393225c" configVersion="608778d6b9dd543f0ea507aa132280c31fdb51e3"/>
-		<Metadata name="Subsystem.ТУРВ_ТабелированиеСотрудников.Subsystem.Администрирование" id="6de822df-2d5d-45cb-9193-b91c6ac23df5" configVersion="8b8ef3fe77d4a85f562882f0d7fa2f3ed1a7ce1c"/>
-		<Metadata name="Subsystem.ТУРВ_ТабелированиеСотрудников.Subsystem.Администрирование.CommandInterface" id="6de822df-2d5d-45cb-9193-b91c6ac23df5.1" configVersion="b42dbb875fb499f7085973e7cff70cff6b6ec93a"/>
+		<Metadata name="InformationRegister.ФотографииФизическихЛиц" id="8c7f4974-8fa4-49d1-b259-1ce8a62a3596" configVersion="526f982eec5ffcdb427a8a8125045ce29df69c23"/>
+		<Metadata name="InformationRegister.ФотографииФизическихЛиц.RecordSetModule" id="8c7f4974-8fa4-49d1-b259-1ce8a62a3596.1" configVersion="41ef2fae6964c9a4a5e200fbde3e3474f66d6a60"/>
+		<Metadata name="Language.Русский" id="3c10bef8-4755-4276-b41f-63a9dbc8f8a6" configVersion="58e54022936719701451e3d95a131e3fd58618cd"/>
+		<Metadata name="Role.ТУРВ_Администратор" id="f1b3e097-cb35-407c-b495-2fffaa34f909" configVersion="f5ab71045f79d21b7c45b9d398bce14ec9419d24"/>
+		<Metadata name="Role.ТУРВ_Администратор.Rights" id="f1b3e097-cb35-407c-b495-2fffaa34f909.0" configVersion="d3a7cc241e94cc63bf439eb3755f444ed59791bd"/>
+		<Metadata name="Role.ТУРВ_ОсновнаяРоль" id="1e83c00a-98cb-4334-8c1f-56176a4c2f17" configVersion="63e386b69423316ae45a8f459fad9f78971c4656"/>
+		<Metadata name="Role.ТУРВ_Пользователь" id="dbaa7358-da2d-483b-87fe-b8c43b2ba2e7" configVersion="0ad893d3e7c456be289aeb31ef962d8ec3d7483f"/>
+		<Metadata name="Role.ТУРВ_Пользователь.Rights" id="dbaa7358-da2d-483b-87fe-b8c43b2ba2e7.0" configVersion="9bc35fd11e3785b856cbfaf919be1cf089645779"/>
+		<Metadata name="Subsystem.ТУРВ_ТабелированиеСотрудников" id="1001d0a7-9126-4f78-8a8a-a258c6a089a7" configVersion="c0a043321a1894dd70466cb315ec1ff7159cba8c"/>
+		<Metadata name="Subsystem.ТУРВ_ТабелированиеСотрудников.Subsystem.Администрирование" id="5ccdc824-b3d4-4941-b09a-acd1e654dc82" configVersion="1bbe512d996b40e769493811c29aed63da16dbe7"/>
+		<Metadata name="Subsystem.ТУРВ_ТабелированиеСотрудников.Subsystem.Администрирование.CommandInterface" id="5ccdc824-b3d4-4941-b09a-acd1e654dc82.1" configVersion="80ce92554a2f895ef90814234fc0d92fa7e63400"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

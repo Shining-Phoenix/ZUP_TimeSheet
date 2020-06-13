@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<InformationRegister uuid="8e3221de-b78e-40d4-abc2-5cf133066c68">
+	<InformationRegister uuid="e55f0b38-0a79-40a1-8eae-64b6658f881f">
 		<InternalInfo>
 			<xr:GeneratedType name="InformationRegisterRecord.ТУРВ_НастройкиСервиса" category="Record">
-				<xr:TypeId>c2ab989b-aedd-4b0a-8a2a-53bab905f06a</xr:TypeId>
-				<xr:ValueId>4c229cf1-678e-43d3-96bc-ee5b26aaee62</xr:ValueId>
+				<xr:TypeId>9b1bf36b-41c4-48a2-8033-267aa23111fe</xr:TypeId>
+				<xr:ValueId>2fd0aa8d-5c97-4c5c-9e79-95b607ed6d32</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterManager.ТУРВ_НастройкиСервиса" category="Manager">
-				<xr:TypeId>8fef37cc-4e22-4e55-bde0-67a2ccbffcd5</xr:TypeId>
-				<xr:ValueId>61bb45f5-0a60-4029-ad1c-0489e4ff1fcf</xr:ValueId>
+				<xr:TypeId>2331280d-6fbe-4164-a600-7bcfc473c292</xr:TypeId>
+				<xr:ValueId>e6e063fe-c6eb-4015-9a08-b42af4304177</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterSelection.ТУРВ_НастройкиСервиса" category="Selection">
-				<xr:TypeId>f4c8cab9-bec1-4cab-b9b2-25e6f1d97b95</xr:TypeId>
-				<xr:ValueId>f73c025e-d1a9-4391-b743-d4a43bd447d6</xr:ValueId>
+				<xr:TypeId>0fcd2a7b-e5fe-47a5-9b0c-9b2331618a2a</xr:TypeId>
+				<xr:ValueId>3d8c06df-2e81-44e1-942e-4e123ea26fcb</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterList.ТУРВ_НастройкиСервиса" category="List">
-				<xr:TypeId>3bc26692-dcfb-4ef7-9a59-8ab9ffb95acd</xr:TypeId>
-				<xr:ValueId>f698fc02-7f8c-42f7-9dc8-8f6efe6b9f33</xr:ValueId>
+				<xr:TypeId>3c33b82b-1ffd-432d-83fd-4d680b8a16c1</xr:TypeId>
+				<xr:ValueId>1126189c-8735-4e6b-8f99-0eac9a55fe91</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordSet.ТУРВ_НастройкиСервиса" category="RecordSet">
-				<xr:TypeId>d5a17b38-21d8-4244-b2ad-e7eb41221037</xr:TypeId>
-				<xr:ValueId>fd11b91c-1d94-4a8e-aaf9-8126a68fa5a8</xr:ValueId>
+				<xr:TypeId>4d550478-55ca-4df2-8f8e-2be4b952d203</xr:TypeId>
+				<xr:ValueId>597bf48c-78ec-4e2b-9a39-5792d93001d1</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordKey.ТУРВ_НастройкиСервиса" category="RecordKey">
-				<xr:TypeId>bcbe653b-d71e-41d1-b3af-2877fc09ea3d</xr:TypeId>
-				<xr:ValueId>8b6adbc0-face-4f96-933b-7024a60101d0</xr:ValueId>
+				<xr:TypeId>0dd97ee7-9c30-414b-8b9c-b398619cd6e0</xr:TypeId>
+				<xr:ValueId>5c9ef560-bf78-494b-8d58-98bac3eecab3</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordManager.ТУРВ_НастройкиСервиса" category="RecordManager">
-				<xr:TypeId>9f7b8d8c-d9ab-47cb-b1e2-91bcd6581d49</xr:TypeId>
-				<xr:ValueId>db7109c2-e14a-4171-85b4-7eabff517782</xr:ValueId>
+				<xr:TypeId>fc96bfd1-d8cc-4326-a6b3-41a7ed4ca5c1</xr:TypeId>
+				<xr:ValueId>8862f6b4-4d2c-4ccf-bad2-3e0f3a1833ff</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки сервиса (ЛК)</v8:content>
+					<v8:content>Настройки сервиса</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru1</v8:lang>
@@ -50,6 +50,112 @@
 			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Active">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="LineNumber">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Recorder">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Period">
+					<xr:LinkByType/>
+					<xr:FillChecking>ShowError</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
 			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
@@ -68,7 +174,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="1e34078b-aa52-4a08-8a73-64cf3518c11f">
+			<Resource uuid="56c0d3b5-762d-4ded-9bf7-e97d837df8d7">
 				<Properties>
 					<Name>УровеньЛогирования</Name>
 					<Synonym>
@@ -111,7 +217,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Dimension uuid="ecc8ce5f-3cb7-48ac-9ac4-8ff321799537">
+			<Dimension uuid="475ad824-3d05-4d03-8f47-6634c6640976">
 				<Properties>
 					<Name>АдресСервера</Name>
 					<Synonym>
@@ -157,7 +263,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="73131fb9-cfb6-4a0f-9e75-64e61e2db41e">
+			<Dimension uuid="924290fc-5d03-4410-904b-efad9b85092d">
 				<Properties>
 					<Name>ЛогинПользователя</Name>
 					<Synonym>
@@ -203,7 +309,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="5b7d5fa3-c22c-4882-afc8-9c49b08a112c">
+			<Dimension uuid="4960cf37-a86c-4d41-a9e8-9a579bab9075">
 				<Properties>
 					<Name>ПарольПользователя</Name>
 					<Synonym>
@@ -249,7 +355,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="683ea731-736e-4e65-a3fb-14d82a6babee">
+			<Dimension uuid="054e1645-2530-4378-b542-f7befec56ce4">
 				<Properties>
 					<Name>ИДБазы</Name>
 					<Synonym>

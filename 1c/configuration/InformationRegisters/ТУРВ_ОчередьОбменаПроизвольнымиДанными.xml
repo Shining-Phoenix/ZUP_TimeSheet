@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<InformationRegister uuid="47175bbc-bf0c-4a85-be36-07da02c2f8a1">
+	<InformationRegister uuid="da999e57-a183-42c7-9f99-dfe4e63d1499">
 		<InternalInfo>
 			<xr:GeneratedType name="InformationRegisterRecord.ТУРВ_ОчередьОбменаПроизвольнымиДанными" category="Record">
-				<xr:TypeId>06b1fb2d-ef0d-4191-8f04-bcf2b48ab5a4</xr:TypeId>
-				<xr:ValueId>8ee31884-8a05-44ad-abc4-11efb8b9fe75</xr:ValueId>
+				<xr:TypeId>228cf6bb-d2b0-4d6e-89a5-d3db0a46ed3f</xr:TypeId>
+				<xr:ValueId>769cf4ca-793c-4aef-8418-ea05a32ee3b5</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterManager.ТУРВ_ОчередьОбменаПроизвольнымиДанными" category="Manager">
-				<xr:TypeId>0a788d08-2b39-4d24-bba6-17ad06d30a8f</xr:TypeId>
-				<xr:ValueId>e4313a2e-cb5a-4872-8556-8cdd81d773f4</xr:ValueId>
+				<xr:TypeId>bb5a661a-0d60-49c0-8f63-2dcd5560483c</xr:TypeId>
+				<xr:ValueId>d507eb7a-af8b-49f7-a397-216073139cf3</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterSelection.ТУРВ_ОчередьОбменаПроизвольнымиДанными" category="Selection">
-				<xr:TypeId>17dd5f04-e441-4cd1-8fe8-77ef642b8c59</xr:TypeId>
-				<xr:ValueId>210bb283-e300-44aa-8117-57a4fb74482c</xr:ValueId>
+				<xr:TypeId>8048b628-c353-4fb2-83f3-32da22ca2e25</xr:TypeId>
+				<xr:ValueId>d34b4411-eb09-45c5-9b3b-81c9fb2633a5</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterList.ТУРВ_ОчередьОбменаПроизвольнымиДанными" category="List">
-				<xr:TypeId>c0247c9e-cc26-49e7-8cd8-b37eb83e44d3</xr:TypeId>
-				<xr:ValueId>fdd09673-55c5-4336-9414-fc1eb123b55d</xr:ValueId>
+				<xr:TypeId>c435214d-074b-498e-a9cb-40f0668b34b4</xr:TypeId>
+				<xr:ValueId>137ea3f5-70b0-42b1-bd50-c26e45d41ba0</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordSet.ТУРВ_ОчередьОбменаПроизвольнымиДанными" category="RecordSet">
-				<xr:TypeId>10f821dd-d451-4b6e-8362-69a7ecd43b61</xr:TypeId>
-				<xr:ValueId>930fad69-b819-4416-ad81-80855ba6b7a1</xr:ValueId>
+				<xr:TypeId>76112abc-fd67-4a1d-ad05-5b079d64b0f4</xr:TypeId>
+				<xr:ValueId>95d714e9-3bdb-49b7-92ae-a7a5c931d715</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordKey.ТУРВ_ОчередьОбменаПроизвольнымиДанными" category="RecordKey">
-				<xr:TypeId>b376f17f-caef-4a08-b2e8-5ec58afeaae0</xr:TypeId>
-				<xr:ValueId>bc04ca8f-9457-4464-a636-3c2c11d623f5</xr:ValueId>
+				<xr:TypeId>cedd8a2a-b28f-42fa-b671-bbdf53455114</xr:TypeId>
+				<xr:ValueId>ff91a999-39fd-461d-ac15-abe4f5eff127</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordManager.ТУРВ_ОчередьОбменаПроизвольнымиДанными" category="RecordManager">
-				<xr:TypeId>878ee95e-5ba9-43c7-8f3a-ed5d8ec92b8d</xr:TypeId>
-				<xr:ValueId>303dc37b-5024-432e-80eb-08f47adca5ff</xr:ValueId>
+				<xr:TypeId>6e8f5cd2-54d2-4c3e-a5b7-c425c9617126</xr:TypeId>
+				<xr:ValueId>3f6b9486-5042-4753-8c2c-c06c6b5b6b56</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Очередь обмена с ЛК (произвольные данные) (ЛК)</v8:content>
+					<v8:content>Очередь обмена (произвольные данные) </v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru1</v8:lang>
@@ -50,6 +50,112 @@
 			<DefaultListForm>InformationRegister.ТУРВ_ОчередьОбменаПроизвольнымиДанными.Form.ФормаСписка</DefaultListForm>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Active">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="LineNumber">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Recorder">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Period">
+					<xr:LinkByType/>
+					<xr:FillChecking>ShowError</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
 			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
@@ -68,7 +174,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="b7b916c0-3671-47e7-aaef-23388c32d0e5">
+			<Resource uuid="e74e4c65-f44d-4269-b8ff-7b7e39f257f3">
 				<Properties>
 					<Name>Данные</Name>
 					<Synonym>
@@ -111,7 +217,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="934379eb-55bc-459f-a615-27bd5f962e2d">
+			<Resource uuid="ffc844e4-1ba5-47ee-9644-aa3eb0ea1c1f">
 				<Properties>
 					<Name>Статус</Name>
 					<Synonym>
@@ -150,7 +256,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Attribute uuid="e0d63d85-b3a4-412b-9b2f-e3d5392e5ebe">
+			<Attribute uuid="0e699530-fb17-4751-9ed9-053e82ae78db">
 				<Properties>
 					<Name>ДатаСобытия</Name>
 					<Synonym>
@@ -192,7 +298,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="e70a5e51-43d1-4b92-9876-145b74c9b500">
+			<Attribute uuid="2478c026-f88c-4b03-80fd-49672fb9c50a">
 				<Properties>
 					<Name>ИД</Name>
 					<Synonym>
@@ -235,7 +341,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Dimension uuid="a7a6ca0a-f100-490a-b53d-aff9bb3f7fb2">
+			<Dimension uuid="7e41c111-f26b-4a8b-8cf3-84524e9fc5cd">
 				<Properties>
 					<Name>ТипОбъкта</Name>
 					<Synonym>
@@ -281,7 +387,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="6386319f-ab22-4d55-9313-1115cf873851">
+			<Dimension uuid="33ff35d6-adba-40f4-8080-524e063cb35b">
 				<Properties>
 					<Name>ИмяОбъекта</Name>
 					<Synonym>
@@ -327,7 +433,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="6256cb6c-c97f-4c2d-b728-b17f117686df">
+			<Dimension uuid="80986c37-bd23-45da-bf27-f8a812b43628">
 				<Properties>
 					<Name>ВидСобытия</Name>
 					<Synonym>
@@ -369,7 +475,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="3d14be2e-8e2d-4af3-b81f-1413afa15069">
+			<Dimension uuid="d0f21fe4-472b-4001-a320-515fd2de2e27">
 				<Properties>
 					<Name>ХЭШ</Name>
 					<Synonym>

@@ -15,17 +15,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Configuration.ZUP_TimeSheet</name>
 		<right>
 			<name>MainWindowModeNormal</name>
@@ -45,6 +34,17 @@
 		</right>
 		<right>
 			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ТУРВ_ОчередьОбменаСсылочнымиДанными</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 	</object>

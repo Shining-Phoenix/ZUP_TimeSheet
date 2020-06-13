@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<Enum uuid="64cfdf34-f9ab-4e0c-8c45-f74538c40f96">
+	<Enum uuid="26a32f37-3b60-4a3b-8bdc-c177259a0b7e">
 		<InternalInfo>
 			<xr:GeneratedType name="EnumRef.ТУРВ_СтатусОбменаСЛК" category="Ref">
-				<xr:TypeId>08bf2e24-d4a9-4f34-a4f5-5e982f361e6f</xr:TypeId>
-				<xr:ValueId>625d9ac6-71e4-48a2-b7a6-369b81399759</xr:ValueId>
+				<xr:TypeId>1bbfd898-309e-422e-88bd-2179351958c5</xr:TypeId>
+				<xr:ValueId>ef4e9b59-ba37-4bfb-8c7d-c89b58c2c13e</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="EnumManager.ТУРВ_СтатусОбменаСЛК" category="Manager">
-				<xr:TypeId>7163ed92-02e1-4264-ab6b-37fe8790fd5d</xr:TypeId>
-				<xr:ValueId>f5dc52a9-b43c-4513-b705-6e6a0ff7a015</xr:ValueId>
+				<xr:TypeId>29a682af-9e7f-4b64-9094-b9990faad17d</xr:TypeId>
+				<xr:ValueId>218a3486-e1df-48b2-b707-3a72d29251f2</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="EnumList.ТУРВ_СтатусОбменаСЛК" category="List">
-				<xr:TypeId>79da4f1f-480c-4f9a-9ad4-941425d599bd</xr:TypeId>
-				<xr:ValueId>d0ae3efe-02ae-40ae-b0ac-240b460472fa</xr:ValueId>
+				<xr:TypeId>c2a33d79-5253-47e7-98cb-17b6e2ca7536</xr:TypeId>
+				<xr:ValueId>e7521939-c18c-4d5d-927a-e57d080d0ef1</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -29,6 +29,60 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
 			<Characteristics/>
 			<QuickChoice>true</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
@@ -42,7 +96,7 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="a1f58133-bff1-4e39-b7fd-bd266bf8bd06">
+			<EnumValue uuid="4221b0cd-6639-4872-b5c0-de97331fa034">
 				<Properties>
 					<Name>Новый</Name>
 					<Synonym>
@@ -54,7 +108,7 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="48b09c2c-8005-451f-80bc-03106b0867e2">
+			<EnumValue uuid="46f2ced9-f4e3-4a95-b73a-d6fc84269f2e">
 				<Properties>
 					<Name>Выполнен</Name>
 					<Synonym>
@@ -66,7 +120,7 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="17df3ad9-b632-4397-9f72-f5774292057b">
+			<EnumValue uuid="56e9dec2-b93d-4939-9989-5d5b0a803bc0">
 				<Properties>
 					<Name>Ошибка</Name>
 					<Synonym>

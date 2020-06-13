@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<DataProcessor uuid="599f5fa6-a7b7-4bb3-a50a-358d89cc3189">
+	<DataProcessor uuid="af15164a-cd49-4dac-86e0-96775cbf5ba9">
 		<InternalInfo>
 			<xr:GeneratedType name="DataProcessorObject.ТУРВ_Администрирование" category="Object">
-				<xr:TypeId>ee1d5288-8658-49ce-b0d0-b04a31b54b00</xr:TypeId>
-				<xr:ValueId>d0d1e806-94e8-4567-adc3-ecbc71323292</xr:ValueId>
+				<xr:TypeId>3a9f734e-7228-4569-b3ae-036fc0405295</xr:TypeId>
+				<xr:ValueId>7c3892e9-41ee-4257-8580-018e934cd4fa</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DataProcessorManager.ТУРВ_Администрирование" category="Manager">
-				<xr:TypeId>6dd992a3-dbe3-4c5a-82a3-824b39ed5479</xr:TypeId>
-				<xr:ValueId>cc2c9c62-2f1f-4684-9a77-2773e47085fa</xr:ValueId>
+				<xr:TypeId>b4e82538-a9fe-4147-9bf5-97dac0c6fec7</xr:TypeId>
+				<xr:ValueId>88de4530-1f2a-457b-8199-648d9359ae7e</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -16,7 +16,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Администрирование (ЛК)</v8:content>
+					<v8:content>Администрирование</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru1</v8:lang>
@@ -32,7 +32,7 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="ba281836-0116-4e46-b548-dd6fd0b48a96">
+			<Attribute uuid="dd93509d-d126-485c-be27-2b35dfbaf48c">
 				<Properties>
 					<Name>Пользователь</Name>
 					<Synonym>
@@ -66,7 +66,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="ba03e0f6-6fe0-45ab-a3d6-0095be74c2b1">
+			<Attribute uuid="e955eff5-5f9b-47f8-9049-bdeb90c606e1">
 				<Properties>
 					<Name>Логин</Name>
 					<Synonym>
@@ -104,7 +104,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="67187821-8371-4fff-b278-c3e91a2d5b9c">
+			<Attribute uuid="4bab399b-a299-4593-a756-a8724807f253">
 				<Properties>
 					<Name>Пароль</Name>
 					<Synonym>
