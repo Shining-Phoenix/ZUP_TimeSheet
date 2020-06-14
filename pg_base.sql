@@ -73,3 +73,17 @@ CREATE TABLE public."position" (
   CONSTRAINT employee_position_pkey
     PRIMARY KEY (pk, base_pk)
 );
+
+
+CREATE TABLE public.types_of_time (
+  pk               varchar(36) NOT NULL,
+  base_pk          integer NOT NULL,
+  "name"           varchar(50) NOT NULL,
+  code             varchar(3) NOT NULL,
+  deleted          boolean NOT NULL DEFAULT false,
+  general_time_pk  varchar(36) NOT NULL,
+  predefined_name  varchar(50) NOT NULL,
+  /* Keys */
+  CONSTRAINT "TypesOfTime_pkey"
+    PRIMARY KEY (pk, base_pk)
+);

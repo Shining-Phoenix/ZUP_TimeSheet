@@ -8,6 +8,7 @@ import { EmployeeModule } from './employee/employee.module';
 import { OrganizationModule } from './organization/organization.module';
 import { SubdivisionModule } from './subdivision/subdivision.module';
 import { PositionModule } from './position/position.module';
+import { TypesOfTimeModule } from './typesOfTime/typesOfTime.module';
 
 const environment = process.env.NODE_ENV || 'development';
 
@@ -19,7 +20,8 @@ const environment = process.env.NODE_ENV || 'development';
     EmployeeModule,
     OrganizationModule,
     SubdivisionModule,
-    PositionModule
+    PositionModule,
+    TypesOfTimeModule
   ],
   providers: [PgPoolService],
 })
