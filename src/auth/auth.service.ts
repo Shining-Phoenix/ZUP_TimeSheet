@@ -13,6 +13,7 @@ import { SignInDto } from './dto/signin.dto';
 import { IReadableUser } from 'src/user/interfaces/readable-user.interface';
 import { userSensitiveFieldsEnum } from 'src/user/enums/protected-fields.enum';
 import { ITokenPayload } from 'src/auth/interfaces/token-payload.interface'
+import { stringify } from 'querystring';
 
 @Injectable()
 export class AuthService {
@@ -34,12 +35,16 @@ export class AuthService {
       if (user.status !== statusEnum.active) {
         throw new MethodNotAllowedException();
       }
+
+      const expiresIn = 60 * 60 * 24
+
       const tokenPayload: ITokenPayload = {
         pk: user.pk,
         status: user.status,
         roles: user.roles,
+        expiresIn
       };
-      const token = await this.generateToken(tokenPayload);
+      const token = await this.generateToken(tokenPayload, {expiresIn});
 
       const readableUser: IReadableUser =  {
             email: user.email,
@@ -48,7 +53,8 @@ export class AuthService {
             firstName: user.firstName,
             patronymic: user.patronymic,
             roles: user.roles,
-            accessToken: token
+            accessToken: token,
+            expiresIn
        };
 
       return _.omit<any>(readableUser, Object.values(userSensitiveFieldsEnum)) as IReadableUser;

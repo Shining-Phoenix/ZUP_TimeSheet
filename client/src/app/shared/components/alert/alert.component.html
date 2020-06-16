@@ -1,0 +1,6 @@
+<ngb-alert
+  *ngIf="text && !staticAlertClosed" (close)="staticAlertClosed=true"
+  style="position: absolute; top: 65px; right: 0; background-color: white; color: #36065B; border-color: white;"
+  class="mr-1">
+  {{ text }}
+</ngb-alert>

@@ -6,4 +6,5 @@ export interface IReadableUser {
     readonly patronymic: string;
     readonly roles: Array<number>;
     accessToken?: string;
+    expiresIn: number
 }

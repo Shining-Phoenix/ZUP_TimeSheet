@@ -155,8 +155,6 @@ export class UserService {
 
         const roles = [];
 
-        console.log(+userRow.get('pk').toString(), roleResult)
-
         for (const role of roleResult) {
           roles.push(role.get('group_pk'));
         }
