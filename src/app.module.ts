@@ -9,6 +9,8 @@ import { OrganizationModule } from './organization/organization.module';
 import { SubdivisionModule } from './subdivision/subdivision.module';
 import { PositionModule } from './position/position.module';
 import { TypesOfTimeModule } from './typesOfTime/typesOfTime.module';
+import { WorkSchedulesModule } from './workSchedules/workSchedules.module';
+import { EmployeeWorkplaceHistoryModule } from './employeeWorkplaceHistory/employeeWorkplaceHistory.module'
 
 const environment = process.env.NODE_ENV || 'development';
 
@@ -21,7 +23,9 @@ const environment = process.env.NODE_ENV || 'development';
     OrganizationModule,
     SubdivisionModule,
     PositionModule,
-    TypesOfTimeModule
+    TypesOfTimeModule,
+    WorkSchedulesModule,
+    EmployeeWorkplaceHistoryModule
   ],
   providers: [PgPoolService],
 })

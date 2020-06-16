@@ -7,7 +7,7 @@ async function bootstrap() {
 
   const options = new DocumentBuilder()
     .addBearerAuth()
-    .setTitle('РМ Табельщика')
+    .setTitle('TimeKeeper')
     .setDescription('Удаленное рабочее место табельщика 1С: ЗУП')
     .setVersion('0.0.0')
     .build();
