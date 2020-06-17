@@ -1,9 +1,11 @@
-import { Body, Controller, Post, Put, ValidationPipe } from '@nestjs/common';
+import { Body, Request, Controller, Post, Put, UseGuards, ValidationPipe } from '@nestjs/common';
 
 import { OrganizationService } from './organization.service';
 import { OrganizationDto } from './dto/organization.dto';
 import { IOrganization } from './interfaces/organization.interface';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { JwtAuthGuard } from './../auth/jwt-auth.guard';
+import { ITokenPayload } from 'src/auth/interfaces/token-payload.interface'
 
 @ApiTags('organization')
 @Controller('organization')
@@ -11,14 +13,19 @@ export class OrganizationController {
 
   constructor(private readonly organizationService: OrganizationService) { }
 
+  @ApiBearerAuth('access-token')
+  @UseGuards(JwtAuthGuard)
   @Put('/')
-  async create(@Body(new ValidationPipe()) organizationDto: OrganizationDto): Promise<IOrganization> {
-    return this.organizationService.create(organizationDto);
+  async create(@Request() req, @Body(new ValidationPipe()) organizationDto: OrganizationDto): Promise<IOrganization> {
+    const user: ITokenPayload = req.user;
+    return this.organizationService.create(user, organizationDto);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Post('/')
-  async update(@Body(new ValidationPipe()) organizationDto: OrganizationDto): Promise<Boolean> {
-    return await this.organizationService.update(organizationDto);
+  async update(@Request() req, @Body(new ValidationPipe()) organizationDto: OrganizationDto): Promise<Boolean> {
+    const user: ITokenPayload = req.user;
+    return await this.organizationService.update(user, organizationDto);
   }
 
 }

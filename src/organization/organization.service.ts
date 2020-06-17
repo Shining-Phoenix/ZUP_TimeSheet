@@ -4,13 +4,14 @@ import * as _ from 'lodash';
 import { IOrganization } from './interfaces/organization.interface';
 import { OrganizationDto } from './dto/organization.dto';
 import { PgPoolService } from '../shared/pg-pool/pg-pool.service';
+import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 
 
 @Injectable()
 export class OrganizationService {
   constructor(private readonly pgPoolService: PgPoolService) {}
 
-  async create( organizationDto: OrganizationDto): Promise<IOrganization> {
+  async create(user: ITokenPayload, organizationDto: OrganizationDto): Promise<IOrganization> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -24,7 +25,7 @@ export class OrganizationService {
           RETURNING pk`;
       const result = await client.query(insertSQL,
         [organizationDto.pk,
-          organizationDto.base_pk,
+          user.base_pk,
           organizationDto.name,
           organizationDto.code],
       );
@@ -45,7 +46,7 @@ export class OrganizationService {
     }
   }
 
-  async update( organizationDto: OrganizationDto): Promise<Boolean> {
+  async update(user: ITokenPayload, organizationDto: OrganizationDto): Promise<Boolean> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -64,7 +65,7 @@ export class OrganizationService {
         [organizationDto.name,
           organizationDto.code,
           organizationDto.pk,
-          organizationDto.base_pk],
+          user.base_pk],
       );
 
       await client.query('commit');

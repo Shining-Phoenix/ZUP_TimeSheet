@@ -3,4 +3,5 @@ export interface ITokenPayload {
     status: number,
     expiresIn: number,
     roles: number[],
+    base_pk: number
 }

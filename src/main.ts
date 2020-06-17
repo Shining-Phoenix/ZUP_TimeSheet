@@ -6,7 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const options = new DocumentBuilder()
-    .addBearerAuth()
+    .addBearerAuth(  { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' },
+      'access-token',)
     .setTitle('TimeKeeper')
     .setDescription('Удаленное рабочее место табельщика 1С: ЗУП')
     .setVersion('0.0.0')

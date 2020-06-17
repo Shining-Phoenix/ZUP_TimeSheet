@@ -13,7 +13,6 @@ import { SignInDto } from './dto/signin.dto';
 import { IReadableUser } from 'src/user/interfaces/readable-user.interface';
 import { userSensitiveFieldsEnum } from 'src/user/enums/protected-fields.enum';
 import { ITokenPayload } from 'src/auth/interfaces/token-payload.interface'
-import { stringify } from 'querystring';
 
 @Injectable()
 export class AuthService {
@@ -42,8 +41,10 @@ export class AuthService {
         pk: user.pk,
         status: user.status,
         roles: user.roles,
-        expiresIn
+        expiresIn,
+        base_pk: user.base_pk
       };
+
       const token = await this.generateToken(tokenPayload, {expiresIn});
 
       const readableUser: IReadableUser =  {

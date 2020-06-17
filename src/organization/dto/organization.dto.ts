@@ -8,11 +8,6 @@ export class OrganizationDto{
     readonly pk: string;
 
     @ApiProperty()
-    @IsNumber()
-    @IsNotEmpty()
-    readonly base_pk: number;
-
-    @ApiProperty()
     @IsString()
     @IsNotEmpty()
     readonly name: string;
