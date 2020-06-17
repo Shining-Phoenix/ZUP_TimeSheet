@@ -54,7 +54,7 @@ export class AuthService {
             firstName: user.firstName,
             patronymic: user.patronymic,
             roles: user.roles,
-            accessToken: token,
+            accessToken: 'Bearer ' + token,
             expiresIn
        };
 

@@ -6,22 +6,29 @@ import { IOrganization } from './interfaces/organization.interface';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard } from './../auth/jwt-auth.guard';
 import { ITokenPayload } from 'src/auth/interfaces/token-payload.interface'
+import { Reflector } from '@nestjs/core';
+import { RolesGuard } from '../auth/roles.guard';
+import { Roles } from '../auth/roles.decorator';
 
 @ApiTags('organization')
 @Controller('organization')
+@UseGuards(JwtAuthGuard, RolesGuard)
 export class OrganizationController {
 
   constructor(private readonly organizationService: OrganizationService) { }
 
   @ApiBearerAuth('access-token')
-  @UseGuards(JwtAuthGuard)
+  @Roles('user')
+  @UseGuards(new RolesGuard(new Reflector()))
   @Put('/')
   async create(@Request() req, @Body(new ValidationPipe()) organizationDto: OrganizationDto): Promise<IOrganization> {
     const user: ITokenPayload = req.user;
     return this.organizationService.create(user, organizationDto);
   }
 
-  @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth('access-token')
+  @Roles('user')
+  @UseGuards(new RolesGuard(new Reflector()))
   @Post('/')
   async update(@Request() req, @Body(new ValidationPipe()) organizationDto: OrganizationDto): Promise<Boolean> {
     const user: ITokenPayload = req.user;

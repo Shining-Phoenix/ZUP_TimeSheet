@@ -6,6 +6,7 @@ import { IUser } from './interfaces/user.interface';
 import { CreateUserDto } from './dto/create-user.dto';
 import { PgPoolService } from '../shared/pg-pool/pg-pool.service';
 import { statusEnum } from './enums/status.enum';
+import { roleEnum } from './enums/role.enum';
 
 @Injectable()
 export class UserService {
@@ -50,7 +51,7 @@ export class UserService {
               ($1, $2)`;
 
       for (const role of roles) {
-        client.query(roleSQL, [role, pk]);
+        client.query(roleSQL, [ roleEnum[role], pk]);
       }
 
       await client.query('commit');
@@ -96,7 +97,7 @@ export class UserService {
       const roles = [];
 
       for (const role of roleResult) {
-        roles.push(role.get('group_pk'));
+        roles.push(roleEnum[+role.get('group_pk').toString()]);
       }
 
       await client.query('commit');
@@ -156,7 +157,7 @@ export class UserService {
         const roles = [];
 
         for (const role of roleResult) {
-          roles.push(role.get('group_pk'));
+          roles.push(roleEnum[+role.get('group_pk').toString()]);
         }
 
         await client.query('commit');
