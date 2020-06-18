@@ -21,11 +21,6 @@
 			<ContextMenu name="ПарольПользователяКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ПарольПользователяРасширеннаяПодсказка" id="9"/>
 		</InputField>
-		<InputField name="ИДБазы" id="10">
-			<DataPath>Запись.ИДБазы</DataPath>
-			<ContextMenu name="ИДБазыКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ИДБазыРасширеннаяПодсказка" id="12"/>
-		</InputField>
 		<InputField name="УровеньЛогирования" id="13">
 			<DataPath>Запись.УровеньЛогирования</DataPath>
 			<ListChoiceMode>true</ListChoiceMode>

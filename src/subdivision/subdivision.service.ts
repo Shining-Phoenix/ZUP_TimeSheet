@@ -4,13 +4,15 @@ import * as _ from 'lodash';
 import { ISubdivision } from './interfaces/subdivision.interface';
 import { SubdivisionDto } from './dto/subdivision.dto';
 import { PgPoolService } from '../shared/pg-pool/pg-pool.service';
+import { IUser } from '../user/interfaces/user.interface';
+import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 
 
 @Injectable()
 export class SubdivisionService {
   constructor(private readonly pgPoolService: PgPoolService) {}
 
-  async create( subdivisionDto: SubdivisionDto): Promise<ISubdivision> {
+  async create(user: ITokenPayload, subdivisionDto: SubdivisionDto): Promise<ISubdivision> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -24,7 +26,7 @@ export class SubdivisionService {
           RETURNING pk`;
       const result = await client.query(insertSQL,
         [subdivisionDto.pk,
-          subdivisionDto.base_pk,
+          user.base_pk,
           subdivisionDto.name,
           subdivisionDto.code,
           subdivisionDto.parent_pk,
@@ -47,7 +49,7 @@ export class SubdivisionService {
     }
   }
 
-  async update( subdivisionDto: SubdivisionDto): Promise<Boolean> {
+  async update(user: ITokenPayload, subdivisionDto: SubdivisionDto): Promise<Boolean> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -70,7 +72,7 @@ export class SubdivisionService {
           subdivisionDto.parent_pk,
           subdivisionDto.organization_pk,
           subdivisionDto.pk,
-          subdivisionDto.base_pk],
+          user.base_pk],
       );
 
       await client.query('commit');

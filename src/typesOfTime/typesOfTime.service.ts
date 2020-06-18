@@ -4,13 +4,14 @@ import * as _ from 'lodash';
 import { ITypesOfTime } from './interfaces/typesOfTime.interface';
 import { TypesOfTimeDto } from './dto/typesOfTime.dto';
 import { PgPoolService } from '../shared/pg-pool/pg-pool.service';
+import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 
 
 @Injectable()
 export class TypesOfTimeService {
   constructor(private readonly pgPoolService: PgPoolService) {}
 
-  async create( typesOfTimeDto: TypesOfTimeDto): Promise<ITypesOfTime> {
+  async create(user: ITokenPayload, typesOfTimeDto: TypesOfTimeDto): Promise<ITypesOfTime> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -18,15 +19,15 @@ export class TypesOfTimeService {
 
       const insertSQL = `
           INSERT INTO public.types_of_time
-              (pk, base_pk, "name", code, deleted, general_time_pk, predefined_name)
+              (pk, base_pk, "name", time_code, deleted, general_time_pk, predefined_name)
           VALUES
               ($1, $2, $3, $4, $5, $6, $7)
           RETURNING pk`;
       const result = await client.query(insertSQL,
         [typesOfTimeDto.pk,
-          typesOfTimeDto.base_pk,
+          user.base_pk,
           typesOfTimeDto.name,
-          typesOfTimeDto.code,
+          typesOfTimeDto.time_code,
           typesOfTimeDto.deleted,
           typesOfTimeDto.general_time_pk,
           typesOfTimeDto.predefined_name],
@@ -48,7 +49,7 @@ export class TypesOfTimeService {
     }
   }
 
-  async update( typesOfTimeDto: TypesOfTimeDto): Promise<Boolean> {
+  async update(user: ITokenPayload, typesOfTimeDto: TypesOfTimeDto): Promise<Boolean> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -59,7 +60,7 @@ export class TypesOfTimeService {
               public.types_of_time
           SET
               "name" = $1,
-              code = $2,
+              time_code = $2,
               deleted = $3,
               general_time_pk = $4,
               predefined_name = $5
@@ -68,12 +69,12 @@ export class TypesOfTimeService {
               and base_pk = $7`;
       await client.query(insertSQL,
         [typesOfTimeDto.name,
-          typesOfTimeDto.code,
+          typesOfTimeDto.time_code,
           typesOfTimeDto.deleted,
           typesOfTimeDto.general_time_pk,
           typesOfTimeDto.predefined_name,
           typesOfTimeDto.pk,
-          typesOfTimeDto.base_pk],
+          user.base_pk],
       );
 
       await client.query('commit');

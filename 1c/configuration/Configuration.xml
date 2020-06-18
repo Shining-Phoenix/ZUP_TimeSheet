@@ -47,7 +47,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles>
-				<xr:Item xsi:type="xr:MDObjectRef">Role.ТУРВ_ОсновнаяРоль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ТУРВ_Пользователь</xr:Item>
 			</DefaultRoles>
 			<Vendor/>
 			<Version/>
@@ -62,8 +62,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>ТУРВ_ТабелированиеСотрудников</Subsystem>
-			<CommonPicture>Документация</CommonPicture>
-			<Role>ТУРВ_ОсновнаяРоль</Role>
+			<CommonPicture>ТУРВ_Лого</CommonPicture>
 			<Role>ТУРВ_Пользователь</Role>
 			<Role>ТУРВ_Администратор</Role>
 			<CommonModule>ТУРВ_ОбменДаннымиСервер</CommonModule>

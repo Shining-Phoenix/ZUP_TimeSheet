@@ -5,13 +5,14 @@ import { EmployeeWorkplaceHistoryUpdateDto } from './dto/employeeWorkplaceHistor
 import { EmployeeWorkplaceHistoryDeleteDto} from './dto/employeeWorkplaceHistoryDelete.dto';
 import { PgPoolService } from '../shared/pg-pool/pg-pool.service';
 import { EmployeeWorkplaceHistoryCreateDto, EmployeeWorkplaceHistoryCreateRowDto } from './dto/employeeWorkplaceHistoryCreate.dto';
+import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 
 
 @Injectable()
 export class EmployeeWorkplaceHistoryService {
   constructor(private readonly pgPoolService: PgPoolService) {}
 
-  async create( employeeWorkplaceHistoryDto: EmployeeWorkplaceHistoryCreateDto): Promise<Boolean> {
+  async create(user: ITokenPayload, employeeWorkplaceHistoryDto: EmployeeWorkplaceHistoryCreateDto): Promise<Boolean> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -25,12 +26,12 @@ export class EmployeeWorkplaceHistoryService {
                 AND base_pk = $2`;
       await client.query(deleteSQL,
         [employeeWorkplaceHistoryDto.employee_pk,
-          employeeWorkplaceHistoryDto.base_pk],
+          user.base_pk],
       ); 
 
       let row: EmployeeWorkplaceHistoryCreateRowDto
 
-      for (row of employeeWorkplaceHistoryDto.rows) {
+      for (row of employeeWorkplaceHistoryDto.workplaces) {
         const insertSQL = `
           INSERT INTO public.employee_workplace_history
               (position_pk, subdivision_pk, employee_pk, date_from, base_pk)
@@ -43,7 +44,7 @@ export class EmployeeWorkplaceHistoryService {
             row.subdivision_pk,
             employeeWorkplaceHistoryDto.employee_pk,
             rowDateFrom,
-            employeeWorkplaceHistoryDto.base_pk]
+            user.base_pk]
         );
       }
 
@@ -58,7 +59,7 @@ export class EmployeeWorkplaceHistoryService {
     }
   }
 
-  async update( employeeWorkplaceHistoryDto: EmployeeWorkplaceHistoryUpdateDto): Promise<Boolean> {
+  async update(user: ITokenPayload, employeeWorkplaceHistoryDto: EmployeeWorkplaceHistoryUpdateDto): Promise<Boolean> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -80,7 +81,7 @@ export class EmployeeWorkplaceHistoryService {
           employeeWorkplaceHistoryDto.subdivision_pk,
           employeeWorkplaceHistoryDto.employee_pk,
           rowDateFrom,
-          employeeWorkplaceHistoryDto.base_pk],
+          user.base_pk],
       );
 
       await client.query('commit');
@@ -94,7 +95,7 @@ export class EmployeeWorkplaceHistoryService {
     }
   }
 
-  async delete( employeeWorkplaceHistoryDeleteDto: EmployeeWorkplaceHistoryDeleteDto): Promise<Boolean> {
+  async delete(user: ITokenPayload, employeeWorkplaceHistoryDeleteDto: EmployeeWorkplaceHistoryDeleteDto): Promise<Boolean> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -111,7 +112,7 @@ export class EmployeeWorkplaceHistoryService {
       await client.query(insertSQL,
         [employeeWorkplaceHistoryDeleteDto.employee_pk,
           rowDateFrom,
-          employeeWorkplaceHistoryDeleteDto.base_pk],
+          user.base_pk],
       );
 
       await client.query('commit');

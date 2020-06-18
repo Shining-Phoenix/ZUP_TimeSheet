@@ -34,7 +34,4 @@ export class CreateUserDto {
 
     @ApiProperty()
     readonly id_1c: string;
-
-    @ApiProperty()
-    readonly base_pk: number;
 }

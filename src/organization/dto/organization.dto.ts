@@ -11,9 +11,4 @@ export class OrganizationDto{
     @IsString()
     @IsNotEmpty()
     readonly name: string;
-
-    @ApiProperty()
-    @IsString()
-    @IsNotEmpty()
-    readonly code: string;
 }

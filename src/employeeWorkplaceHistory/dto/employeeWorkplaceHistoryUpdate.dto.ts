@@ -3,11 +3,6 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class EmployeeWorkplaceHistoryUpdateDto{
     @ApiProperty()
-    @IsNumber()
-    @IsNotEmpty()
-    readonly base_pk: number;
-
-    @ApiProperty()
     @IsString()
     @IsNotEmpty()
     readonly position_pk: string;

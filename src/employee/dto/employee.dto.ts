@@ -8,14 +8,14 @@ export class EmployeeDto{
     readonly pk: string;
 
     @ApiProperty()
-    @IsNumber()
+    @IsString()
     @IsNotEmpty()
-    readonly base_pk: number;
+    readonly user_id_1c: string;
 
     @ApiProperty()
     @IsString()
     @IsNotEmpty()
-    readonly user_id_1c: string;
+    readonly name: string;
 
     @ApiProperty()
     @IsString()

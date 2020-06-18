@@ -13,7 +13,7 @@ export class UserService {
 
   constructor(private readonly pgPoolService: PgPoolService) {}
 
-  async create(createUserDto: CreateUserDto, roles: Array<number>): Promise<IUser> {
+  async create(base_pk: number, createUserDto: CreateUserDto, roles: Array<number>): Promise<IUser> {
 
     const saltRounds = 10;
     const salt = await bcrypt.genSalt(saltRounds);
@@ -37,7 +37,7 @@ export class UserService {
           createUserDto.id_1c,
           createUserDto.email,
           hash,
-          createUserDto.base_pk,
+          base_pk,
           statusEnum.active],
       );
       const rows = [...result];
@@ -56,7 +56,7 @@ export class UserService {
 
       await client.query('commit');
 
-      const createdUser = _.assignIn(createUserDto, { password: hash, pk, roles, status: statusEnum.active });
+      const createdUser = _.assignIn(createUserDto, { password: hash, pk, roles, status: statusEnum.active, base_pk });
 
       return createdUser;
     } catch (e) {

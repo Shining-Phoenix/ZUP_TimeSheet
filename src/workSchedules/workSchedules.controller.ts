@@ -1,24 +1,38 @@
-import { Body, Controller, Post, Put, ValidationPipe } from '@nestjs/common';
+import { Body, Controller, Post, Put, Request, UseGuards, ValidationPipe } from '@nestjs/common';
 
 import { WorkSchedulesService } from './workSchedules.service';
 import { WorkSchedulesDto } from './dto/workSchedules.dto';
 import { IWorkSchedules } from './interfaces/workSchedules.interface';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { RolesGuard } from '../auth/roles.guard';
+import { Roles } from '../auth/roles.decorator';
+import { Reflector } from '@nestjs/core';
+import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 
-@ApiTags('workSchedules')
-@Controller('workSchedules')
+@ApiTags('work-schedules')
+@Controller('api/v1/work-schedules')
+@UseGuards(JwtAuthGuard, RolesGuard)
 export class WorkSchedulesController {
 
   constructor(private readonly workSchedulesService: WorkSchedulesService) { }
 
-  @Put('/')
-  async create(@Body(new ValidationPipe()) workSchedulesDto: WorkSchedulesDto): Promise<IWorkSchedules> {
-    return this.workSchedulesService.create(workSchedulesDto);
+  @ApiBearerAuth('access-token')
+  @Roles('admin')
+  @UseGuards(new RolesGuard(new Reflector()))
+  @Post('/')
+  async create(@Request() req, @Body(new ValidationPipe()) workSchedulesDto: WorkSchedulesDto): Promise<IWorkSchedules> {
+    const user: ITokenPayload = req.user;
+    return this.workSchedulesService.create(user, workSchedulesDto);
   }
 
-  @Post('/')
-  async update(@Body(new ValidationPipe()) workSchedulesDto: WorkSchedulesDto): Promise<Boolean> {
-    return await this.workSchedulesService.update(workSchedulesDto);
+  @ApiBearerAuth('access-token')
+  @Roles('admin')
+  @UseGuards(new RolesGuard(new Reflector()))
+  @Put('/')
+  async update(@Request() req, @Body(new ValidationPipe()) workSchedulesDto: WorkSchedulesDto): Promise<Boolean> {
+    const user: ITokenPayload = req.user;
+    return await this.workSchedulesService.update(user, workSchedulesDto);
   }
 
 }

@@ -20,4 +20,12 @@ export class RolesGuard implements CanActivate {
 
     return roles[0] === user.roles[0]
   }
+
+  canActivateForUser(user: ITokenPayload, roles): boolean {
+    if (!roles) {
+      return false;
+    }
+
+    return roles[0] === user.roles[0]
+  }
 }

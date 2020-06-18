@@ -143,6 +143,13 @@
 				</Properties>
 			</Attribute>
 			<Form>Форма</Form>
+			<Template>Макет</Template>
+			<Template>ДанныеДляЗаполненияДанныеОВремениТаблица</Template>
+			<Template>ДанныеДляЗаполненияДанныеОВремениТаблицаПерваяСтрока</Template>
+			<Template>РедактированиеДанныхУчетаВремениЗаДеньПараметры</Template>
+			<Template>РедактированиеДанныхУчетаВремениЗаДеньПараметрыВремениТаблица</Template>
+			<Template>РедактированиеДанныхУчетаВремениЗаДеньПараметрыВремениТаблицаПерваяСтрока</Template>
+			<Template>ФормаРедактироания</Template>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

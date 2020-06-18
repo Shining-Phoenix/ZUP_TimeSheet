@@ -8,19 +8,13 @@ export class TypesOfTimeDto{
     readonly pk: string
 
     @ApiProperty()
-    @IsNumber()
-    @IsNotEmpty()
-    readonly base_pk: number;
-
-    @ApiProperty()
     @IsString()
     @IsNotEmpty()
     readonly name: string;
 
     @ApiProperty()
     @IsString()
-    @IsNotEmpty()
-    readonly code: string;
+    readonly time_code: string;
 
     @ApiProperty()
     @IsBoolean()

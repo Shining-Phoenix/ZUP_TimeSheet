@@ -18,7 +18,7 @@
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture>
-				<xr:Ref>CommonPicture.Документация</xr:Ref>
+				<xr:Ref>CommonPicture.ТУРВ_Лого</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content/>

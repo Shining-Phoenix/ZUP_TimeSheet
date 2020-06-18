@@ -68,12 +68,6 @@
 							<CommandName>Form.Command.СоздатьПользователя</CommandName>
 							<ExtendedTooltip name="СоздатьПользователяРасширеннаяПодсказка" id="11"/>
 						</Button>
-						<Button name="ОбновитьФото" id="16">
-							<Type>UsualButton</Type>
-							<Width>30</Width>
-							<CommandName>Form.Command.ОбновитьФото</CommandName>
-							<ExtendedTooltip name="ОбновитьФотоРасширеннаяПодсказка" id="17"/>
-						</Button>
 						<Button name="СоздатьСотрудниковПоПользователю" id="14">
 							<Type>UsualButton</Type>
 							<Width>30</Width>
@@ -85,18 +79,6 @@
 							<Width>30</Width>
 							<CommandName>Form.Command.СоздатьКадровуюИсторию</CommandName>
 							<ExtendedTooltip name="СоздатьКадровуюИсториюРасширеннаяПодсказка" id="27"/>
-						</Button>
-						<Button name="СоздатьИсториюИзмененияГрафиков" id="36">
-							<Type>UsualButton</Type>
-							<Width>30</Width>
-							<CommandName>Form.Command.СоздатьИсториюИзмененияГрафиков</CommandName>
-							<ExtendedTooltip name="СоздатьИсториюИзмененияГрафиковРасширеннаяПодсказка" id="37"/>
-						</Button>
-						<Button name="СоздатьРасчетныеЛистки" id="34">
-							<Type>UsualButton</Type>
-							<Width>30</Width>
-							<CommandName>Form.Command.СоздатьРасчетныеЛистки</CommandName>
-							<ExtendedTooltip name="СоздатьРасчетныеЛисткиРасширеннаяПодсказка" id="35"/>
 						</Button>
 					</ChildItems>
 				</UsualGroup>

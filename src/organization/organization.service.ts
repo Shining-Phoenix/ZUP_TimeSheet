@@ -19,15 +19,14 @@ export class OrganizationService {
 
       const insertSQL = `
           INSERT INTO public.organization
-              (pk, base_pk, name, code)
+              (pk, base_pk, name)
           VALUES
-              ($1, $2, $3, $4)
+              ($1, $2, $3)
           RETURNING pk`;
       const result = await client.query(insertSQL,
         [organizationDto.pk,
           user.base_pk,
-          organizationDto.name,
-          organizationDto.code],
+          organizationDto.name],
       );
       const rows = [...result];
 
@@ -56,14 +55,12 @@ export class OrganizationService {
           UPDATE
               public.organization
           SET
-              name = $1,
-              code = $2
+              name = $1
           WHERE
-              pk = $3
-              and base_pk = $4`;
+              pk = $2
+              and base_pk = $3`;
       await client.query(insertSQL,
         [organizationDto.name,
-          organizationDto.code,
           organizationDto.pk,
           user.base_pk],
       );

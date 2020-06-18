@@ -22,8 +22,8 @@ export class AuthService {
     private readonly userService: UserService
   ) {}
 
-  async signUp(createUserDto: CreateUserDto): Promise<IUser> {
-    const user = await this.userService.create(createUserDto, [roleEnum.user]);
+  async signUp(base_pk: number, createUserDto: CreateUserDto): Promise<IUser> {
+    const user = await this.userService.create(base_pk, createUserDto, [roleEnum.user]);
     return user;
   }
 

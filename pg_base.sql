@@ -5,7 +5,7 @@
 -- Dumped from database version 12.2
 -- Dumped by pg_dump version 12.2
 
--- Started on 2020-06-16 16:53:01
+-- Started on 2020-06-18 13:19:37
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -33,7 +33,8 @@ CREATE TABLE public.employee (
     user_id_1c character varying(36) NOT NULL,
     code character varying(10) NOT NULL,
     organization_pk character varying(36) NOT NULL,
-    head_employee_pk character varying(36) NOT NULL
+    head_employee_pk character varying(36) NOT NULL,
+    name character varying(100) NOT NULL
 );
 
 
@@ -63,8 +64,7 @@ ALTER TABLE public.employee_workplace_history OWNER TO postgres;
 CREATE TABLE public.organization (
     name character varying(200) NOT NULL,
     pk character varying(36) NOT NULL,
-    base_pk integer NOT NULL,
-    code character varying(10)
+    base_pk integer NOT NULL
 );
 
 
@@ -110,7 +110,7 @@ CREATE TABLE public.types_of_time (
     pk character varying(36) NOT NULL,
     base_pk integer NOT NULL,
     name character varying(50) NOT NULL,
-    code character varying(3) NOT NULL,
+    time_code character varying(3) NOT NULL,
     deleted boolean DEFAULT false NOT NULL,
     general_time_pk character varying(36) NOT NULL,
     predefined_name character varying(50) NOT NULL
@@ -347,7 +347,7 @@ CREATE UNIQUE INDEX users_email_uniq ON public.users USING btree (email);
 CREATE UNIQUE INDEX users_id_1c_uniq ON public.users USING btree (id_1c);
 
 
--- Completed on 2020-06-16 16:53:02
+-- Completed on 2020-06-18 13:19:38
 
 --
 -- PostgreSQL database dump complete

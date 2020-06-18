@@ -1,6 +1,5 @@
 export interface ISubdivision  {
-    readonly pk: string
-    readonly base_pk: number;
+    readonly pk: string;
     readonly name: string;
     readonly code: string;
     readonly parent_pk: string;

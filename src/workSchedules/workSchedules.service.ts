@@ -4,13 +4,14 @@ import * as _ from 'lodash';
 import { IWorkSchedules } from './interfaces/workSchedules.interface';
 import { WorkSchedulesDto } from './dto/workSchedules.dto';
 import { PgPoolService } from '../shared/pg-pool/pg-pool.service';
+import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 
 
 @Injectable()
 export class WorkSchedulesService {
   constructor(private readonly pgPoolService: PgPoolService) {}
 
-  async create( workSchedulesDto: WorkSchedulesDto): Promise<IWorkSchedules> {
+  async create(user: ITokenPayload, workSchedulesDto: WorkSchedulesDto): Promise<IWorkSchedules> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -24,7 +25,7 @@ export class WorkSchedulesService {
           RETURNING pk`;
       const result = await client.query(insertSQL,
         [workSchedulesDto.pk,
-          workSchedulesDto.base_pk,
+          user.base_pk,
           workSchedulesDto.name,
           workSchedulesDto.deleted],
       );
@@ -45,7 +46,7 @@ export class WorkSchedulesService {
     }
   }
 
-  async update( workSchedulesDto: WorkSchedulesDto): Promise<Boolean> {
+  async update(user: ITokenPayload, workSchedulesDto: WorkSchedulesDto): Promise<Boolean> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -64,7 +65,7 @@ export class WorkSchedulesService {
         [workSchedulesDto.name,
           workSchedulesDto.deleted,
           workSchedulesDto.pk,
-          workSchedulesDto.base_pk],
+          user.base_pk],
       );
 
       await client.query('commit');

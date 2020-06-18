@@ -7,6 +7,6 @@ export interface IUser  {
     readonly email: string;
     readonly password: string;
     readonly id_1c: string;
-    readonly base_pk: number;
+    readonly base_pk?: number;
     status: number;
 }

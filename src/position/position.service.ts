@@ -4,13 +4,14 @@ import * as _ from 'lodash';
 import { IPosition } from './interfaces/position.interface';
 import { PositionDto } from './dto/position.dto';
 import { PgPoolService } from '../shared/pg-pool/pg-pool.service';
+import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 
 
 @Injectable()
 export class PositionService {
   constructor(private readonly pgPoolService: PgPoolService) {}
 
-  async create( positionDto: PositionDto): Promise<IPosition> {
+  async create(user: ITokenPayload, positionDto: PositionDto): Promise<IPosition> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -24,7 +25,7 @@ export class PositionService {
           RETURNING pk`;
       const result = await client.query(insertSQL,
         [positionDto.pk,
-          positionDto.base_pk,
+          user.base_pk,
           positionDto.name]
       );
       const rows = [...result];
@@ -44,7 +45,7 @@ export class PositionService {
     }
   }
 
-  async update( positionDto: PositionDto): Promise<Boolean> {
+  async update(user: ITokenPayload, positionDto: PositionDto): Promise<Boolean> {
     const client = await this.pgPoolService.client();
 
     try {
@@ -61,7 +62,7 @@ export class PositionService {
       await client.query(insertSQL,
         [positionDto.name,
           positionDto.pk,
-          positionDto.base_pk],
+          user.base_pk],
       );
 
       await client.query('commit');

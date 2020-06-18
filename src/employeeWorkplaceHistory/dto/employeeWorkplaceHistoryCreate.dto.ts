@@ -20,10 +20,6 @@ export class EmployeeWorkplaceHistoryCreateRowDto{
 }
 
 export class EmployeeWorkplaceHistoryCreateDto{
-  @ApiProperty()
-  @IsNumber()
-  @IsNotEmpty()
-  readonly base_pk: number;
 
   @ApiProperty()
   @IsString()
@@ -36,5 +32,5 @@ export class EmployeeWorkplaceHistoryCreateDto{
   @IsArray()
   @IsNotEmpty()
   @Type(() => EmployeeWorkplaceHistoryCreateRowDto)
-  readonly rows: EmployeeWorkplaceHistoryCreateRowDto[];
+  readonly workplaces: EmployeeWorkplaceHistoryCreateRowDto[];
 }
