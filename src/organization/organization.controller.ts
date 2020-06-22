@@ -1,4 +1,4 @@
-import { Body, Request, Controller, Post, Put, UseGuards, ValidationPipe } from '@nestjs/common';
+import { Body, Request, Controller, Post, Put, UseGuards, ValidationPipe, Get } from '@nestjs/common';
 
 import { OrganizationService } from './organization.service';
 import { OrganizationDto } from './dto/organization.dto';
@@ -10,8 +10,8 @@ import { Reflector } from '@nestjs/core';
 import { RolesGuard } from '../auth/roles.guard';
 import { Roles } from '../auth/roles.decorator';
 
-@ApiTags('api/v1/organization')
-@Controller('organization')
+@ApiTags('organization')
+@Controller('api/v1/organization')
 @UseGuards(JwtAuthGuard, RolesGuard)
 export class OrganizationController {
 
@@ -33,6 +33,15 @@ export class OrganizationController {
   async update(@Request() req, @Body(new ValidationPipe()) organizationDto: OrganizationDto): Promise<Boolean> {
     const user: ITokenPayload = req.user;
     return await this.organizationService.update(user, organizationDto);
+  }
+
+  @ApiBearerAuth('access-token')
+  @Roles('user')
+  @UseGuards(new RolesGuard(new Reflector()))
+  @Get('/')
+  async get(@Request() req): Promise<IOrganization[]> {
+    const user: ITokenPayload = req.user;
+    return await this.organizationService.get(user);
   }
 
 }

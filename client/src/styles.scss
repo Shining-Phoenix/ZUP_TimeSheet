@@ -1,9 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
 
-body {
-  background-color: #4C036E;
-}
-
 .app-wrap{
   flex: 1 1 auto;
   display: flex;
@@ -35,3 +31,6 @@ app-login-page{
   max-width: 100%;
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

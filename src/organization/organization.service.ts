@@ -9,7 +9,8 @@ import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 
 @Injectable()
 export class OrganizationService {
-  constructor(private readonly pgPoolService: PgPoolService) {}
+  constructor(private readonly pgPoolService: PgPoolService) {
+  }
 
   async create(user: ITokenPayload, organizationDto: OrganizationDto): Promise<IOrganization> {
     const client = await this.pgPoolService.client();
@@ -34,7 +35,7 @@ export class OrganizationService {
 
       await client.query('commit');
 
-      const createdOrganization = _.assignIn(organizationDto, {pk});
+      const createdOrganization = _.assignIn(organizationDto, { pk });
 
       return createdOrganization;
     } catch (e) {
@@ -68,6 +69,43 @@ export class OrganizationService {
       await client.query('commit');
 
       return true;
+    } catch (e) {
+      await client.query('roolback');
+      throw e;
+    } finally {
+      await this.pgPoolService.pool.release(client);
+    }
+  }
+
+  async get(user: ITokenPayload): Promise<IOrganization[]> {
+    const client = await this.pgPoolService.client();
+
+    try {
+      await client.query('begin');
+
+      let organisationList = <IOrganization[]>[];
+
+      const selectSQL = `
+      SELECT
+          "name", pk
+      FROM public.organization
+      WHERE 
+          base_pk = $1
+      ORDER BY
+          "name"
+      `;
+      const result = await client.query(selectSQL, [user.base_pk]);
+
+      for (const organization of result) {
+        const newOrganization: IOrganization = {
+          pk: organization.get('pk').toString(),
+          name: organization.get('name').toString(),
+        };
+
+        organisationList.push(newOrganization);
+      }
+
+      return organisationList;
     } catch (e) {
       await client.query('roolback');
       throw e;

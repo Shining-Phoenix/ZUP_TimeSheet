@@ -1,4 +1,4 @@
-import { Body, Controller, Post, Put, Request, UseGuards, ValidationPipe } from '@nestjs/common';
+import { Body, Controller, Get, Post, Put, Query, Request, UseGuards, ValidationPipe } from '@nestjs/common';
 
 import { SubdivisionService } from './subdivision.service';
 import { SubdivisionDto } from './dto/subdivision.dto';
@@ -33,6 +33,15 @@ export class SubdivisionController {
   async update(@Request() req, @Body(new ValidationPipe()) subdivisionDto: SubdivisionDto): Promise<Boolean> {
     const user: ITokenPayload = req.user;
     return await this.subdivisionService.update(user, subdivisionDto);
+  }
+
+  @ApiBearerAuth('access-token')
+  @Roles('user')
+  @UseGuards(new RolesGuard(new Reflector()))
+  @Get('/by-organization')
+  async getByOrganization(@Request() req, @Query() params) : Promise<ISubdivision[]> {
+    const user: ITokenPayload = req.user;
+    return await this.subdivisionService.getByOrganization(user, params.organizationPk);
   }
 
 }

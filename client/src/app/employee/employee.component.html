@@ -1,0 +1,17 @@
+<div class="ml-5 mr-5 mt-2 mb-2">
+  <div *ngIf="employee">
+    <h3>{{ employee.name }}</h3>
+
+    <div>
+      <strong>Подразделение:</strong>
+      {{ employee.subdivision_name }}
+    </div>
+
+    <div>
+      <strong>Должность:</strong>
+      {{ employee.position_name }}
+    </div>
+
+  </div>
+
+</div>

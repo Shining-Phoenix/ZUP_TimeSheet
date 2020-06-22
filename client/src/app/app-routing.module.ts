@@ -3,9 +3,8 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
 import { TimeSheetListPageComponent } from './time-sheet-list-page/time-sheet-list-page.component';
-import { TimeSheetPageComponent } from './time-sheet-page/time-sheet-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-
+import { TimeSheetPageComponent } from './time-sheet-page/time-sheet-page.component';
 
 const routes: Routes = [
   {

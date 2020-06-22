@@ -1,1 +1,65 @@
-<p>time-sheet-list -page works!</p>
+<div  class = "ml-2 mr-2">
+  <h4 class="form-title">Табели сотрудников</h4>
+  <div class="table-actions mt-2 my-2">
+    <button class="btn" (click)="createTimeSheet()"> Создать </button>
+  </div>
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">
+        Статус
+      </th>
+      <th scope="col">
+        Табельщик
+      </th>
+      <th scope="col">
+        1с
+      </th>
+      <th scope="col">
+        Дата
+      </th>
+      <th scope="col">
+        Период
+      </th>
+      <th scope="col">
+        Организация
+      </th>
+      <th scope="col">
+        Подразделение
+      </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let timeSheet of timeSheetList"
+        class="table-row"
+        [ngClass]="{'selected-row': selectedTimeSheet && selectedTimeSheet === timeSheet.pk}"
+        (dblclick)="openTimeSheet(timeSheet)"
+        (click)="activateTimeSheetRow(timeSheet.pk)"
+    >
+      <td class="row-background">
+        {{ timeSheet.statusName }}
+      </td>
+      <td class="row-background">
+        {{ timeSheet.confirmedByTimekeeper }}
+      </td>
+      <td class="row-background">
+        {{ timeSheet.confirmedBy1c }}
+      </td>
+      <td class="row-background">
+        {{ timeSheet.date }}
+      </td>
+      <td class="row-background">
+        {{ timeSheet.period }}
+      </td>
+      <td class="row-background">
+        {{ timeSheet.organizationName }}
+      </td>
+      <td class="row-background">
+        {{ timeSheet.subdivisionName }}
+      </td>
+    </tr>
+    </tbody>
+
+  </table>
+</div>
