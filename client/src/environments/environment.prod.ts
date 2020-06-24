@@ -9,5 +9,6 @@ export const environment: Environment = {
   backTimeSheetListForKeeper: '/api/v1/time-sheet/time-sheet-list-for-keeper',
   backTimeSheetById: '/api/v1/time-sheet/time-sheet-list-by-id',
   backOrganization: '/api/v1/organization',
-  backSubdivisionByOrganization: '/api/v1/subdivision/by-organization'
+  backSubdivisionByOrganization: '/api/v1/subdivision/by-organization',
+  backSubdivisionByOrganizationAndParent: '/api/v1/subdivision/by-organization-and-parent'
 };

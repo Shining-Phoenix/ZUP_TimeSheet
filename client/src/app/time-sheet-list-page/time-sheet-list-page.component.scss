@@ -1,35 +1,12 @@
-.table-row.selected-row{
-  background-color: lightgrey;
-  color: black;
+table {
+  width: 100%;
 }
 
-.table-row:hover{
-  cursor: pointer;
+div.сommand-panel{
+  background-color: red;
+  color: red;
 }
 
-.table-row{
+.tk-table-row{
   user-select: none;
-}
-
-.table{
-  .thead-dark{
-    th{
-      background-color: black;
-      border: 1px solid white;
-    }
-  }
-}
-
-.form-title{
-  background-color: white;
-  margin: 0 0 0 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: lightslategray;
-}
-
-.btn{
-  border-color: white;
-  color: white;
-  background-color: black;
 }

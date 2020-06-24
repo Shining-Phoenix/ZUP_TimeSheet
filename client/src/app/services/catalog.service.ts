@@ -25,4 +25,12 @@ export class CatalogsService {
         return payload
       }))
   }
+
+  getSubdivisionByOrganizationAndParent(organizationPk: string, parentPk: string): Observable<ISubdivision[]> {
+    return this.http.get(environment.backUrl + environment.backSubdivisionByOrganizationAndParent,
+      {params: { parentPk, organizationPk }} )
+      .pipe(map((payload: ISubdivision[]) => {
+        return payload
+      }))
+  }
 }

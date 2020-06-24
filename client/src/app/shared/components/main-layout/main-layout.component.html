@@ -1,11 +1,12 @@
-<div class="app-wrap">
-
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
   <app-alert></app-alert>
 
-  <div class = "nav">
-    <h1 class="ml-2">TimeKeeper</h1>
-  </div>
-  <div class="content-wrap fill-height">
+  <mat-toolbar color="primary"
+  class="mat-elevation-z6"
+  > <mat-icon aria-hidden="false" aria-label="clock">access_time</mat-icon>
+    <span class="ml-2"> TimeKeeper</span>
+  </mat-toolbar>
     <router-outlet></router-outlet>
-  </div>
-</div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

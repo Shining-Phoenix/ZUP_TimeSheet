@@ -1,4 +1,4 @@
-import { IsEmail, IsString, IsNotEmpty, IsNumber } from 'class-validator';
+import { IsEmail, IsString, IsNotEmpty, IsNumber, IsBoolean } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class SubdivisionDto{
@@ -26,4 +26,9 @@ export class SubdivisionDto{
     @IsString()
     @IsNotEmpty()
     readonly organization_pk: string;
+
+    @ApiProperty()
+    @IsBoolean()
+    @IsNotEmpty()
+    readonly hasChild: boolean;
 }

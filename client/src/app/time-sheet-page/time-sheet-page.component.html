@@ -1,8 +1,34 @@
-<div class="ml-2 mr-2">
-  <h4 class="form-title"> {{ title }} </h4>
+<app-page-header
+  [title]="title">
+</app-page-header>
+
+<div class="ml-2 mr-2 mt-2">
+  <div class="mt-2 my-2">
+    <button
+      type="button"
+      aria-label="Записать"
+      mat-stroked-button
+      (click)="createTimeSheet()">
+      <mat-icon aria-hidden="false" aria-label="control_point">done</mat-icon>
+      Записать
+    </button>
+
+    <button
+      type="button"
+      aria-label="Отменить"
+      mat-stroked-button
+      (click)="createTimeSheet()">
+      <mat-icon aria-hidden="false" aria-label="control_point">undo</mat-icon>
+      Отменить
+    </button>
+
+    <hr class="mt-2">
+  </div>
 
   <div>
-    <mat-form-field>
+    <mat-form-field
+      class="document-header-element"
+      [floatLabel]="'always'">
       <mat-label>Дата документа</mat-label>
       <input matInput
              [matDatepicker]="datePicker"
@@ -13,25 +39,32 @@
       <mat-datepicker #datePicker></mat-datepicker>
     </mat-form-field>
   </div>
+
   <div>
-    <mat-form-field>
-      <mat-label>Период регистрации</mat-label>
-      <input matInput
-             [matDatepicker]="periodPicker"
-             [value]="period">
-      <mat-datepicker-toggle
-        matSuffix
-        [for]="periodPicker"></mat-datepicker-toggle>
-      <mat-datepicker #periodPicker></mat-datepicker>
+    <mat-form-field
+      class="document-header-element"
+      [floatLabel]="'always'">
+      <mat-label>Период</mat-label>
+      <input matInput [matDatepicker]="dp" [formControl]="periodPicker">
+      <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+      <mat-datepicker #dp
+                      startView="year"
+                      (yearSelected)="chosenYearHandler($event)"
+                      (monthSelected)="chosenMonthHandler($event, dp)"
+                      panelClass="example-month-picker">
+      </mat-datepicker>
     </mat-form-field>
   </div>
 
   <div>
-    <mat-form-field>
+    <mat-form-field
+      *ngIf="timeSheet"
+      class="document-header-element"
+      [floatLabel]="'always'">
       <mat-label>Организация</mat-label>
       <mat-select
         [(ngModel)]="timeSheet.organizationPk"
-        (ngModelChange)="fetchSubdivision()"
+        (ngModelChange)="onOrganizationChanged()"
       >
           <mat-option
             *ngFor="let org of organizationList"
@@ -43,12 +76,19 @@
   </div>
 
   <div>
-    <mat-form-field>
+    <mat-form-field
+      *ngIf="timeSheet"
+      class="document-header-element"
+      [floatLabel]="'always'">
       <mat-label>Подразделение</mat-label>
       <input type="text" matInput readonly>
-      <button matSuffix mat-icon-button>
+      <button matSuffix mat-icon-button (click)="openSubdivisionSelectDialog()">
         <mat-icon matSuffix>mode_edit</mat-icon>
       </button>
+      <button matSuffix mat-icon-button (click)="clearSubdivision()">
+        <mat-icon matSuffix>clear</mat-icon>
+      </button>
+      {{ timeSheet.subdivisionName}}
     </mat-form-field>
   </div>
 

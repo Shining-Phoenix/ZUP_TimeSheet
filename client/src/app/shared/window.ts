@@ -1,6 +1,7 @@
-import { IEmployeeListMode } from './window.enums';
+import { IListMode } from './window.enums';
 
 export class WindowState {
-  mode : IEmployeeListMode = IEmployeeListMode.select;
-  selectedRow: string
+  mode : IListMode = IListMode.select;
+  selectedRow: string;
+  params: any
 }

@@ -44,4 +44,13 @@ export class SubdivisionController {
     return await this.subdivisionService.getByOrganization(user, params.organizationPk);
   }
 
+  @ApiBearerAuth('access-token')
+  @Roles('user')
+  @UseGuards(new RolesGuard(new Reflector()))
+  @Get('/by-organization-and-parent')
+  async getByParent(@Request() req, @Query() params) : Promise<ISubdivision[]> {
+    const user: ITokenPayload = req.user;
+    return await this.subdivisionService.getByOrganizationAndParent(user, params.organizationPk, params.parentPk);
+  }
+
 }

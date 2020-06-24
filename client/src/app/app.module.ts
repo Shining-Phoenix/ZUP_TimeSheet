@@ -4,6 +4,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { registerLocaleData } from '@angular/common';
+import localeRu from '@angular/common/locales/ru';
+import localeRuExtra from '@angular/common/locales/extra/ru';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,11 +30,29 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { NavPageComponent } from './nav-page/nav-page.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { TestTableComponent } from './test-table/test-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { TestDashboardComponent } from './test-dashboard/test-dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { TestTreeComponent } from './test-tree/test-tree.component';
+import { MatTreeModule } from '@angular/material/tree';
+import { TestAddressFormComponent } from './test-address-form/test-address-form.component';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { SubdivisionListComponent } from './subdivision-list/subdivision-list.component';
+import { MatProgressBar, MatProgressBarModule } from '@angular/material/progress-bar';
+import { SubdivisionSelectDialogComponent } from './subdivision-select-dialog/subdivision-select-dialog.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
+
+registerLocaleData(localeRu, 'ru', localeRuExtra);
 
 const INTERCEPTOR_PROVIDER: Provider = {
   provide: HTTP_INTERCEPTORS,
@@ -52,7 +73,13 @@ const INTERCEPTOR_PROVIDER: Provider = {
     EmployeeListComponent,
     EmployeePageComponent,
     EmployeeComponent,
-    NavPageComponent
+    TestTableComponent,
+    TestDashboardComponent,
+    TestTreeComponent,
+    TestAddressFormComponent,
+    SubdivisionListComponent,
+    SubdivisionSelectDialogComponent,
+    PageHeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +100,16 @@ const INTERCEPTOR_PROVIDER: Provider = {
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatTreeModule,
+    MatRadioModule,
+    MatCheckboxModule,
+    MatProgressBarModule
   ],
   providers: [
     AuthGuard,

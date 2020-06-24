@@ -6,6 +6,7 @@ export interface Environment {
   backEmployeeListById: string,
   backTimeSheetListForKeeper : string,
   backTimeSheetById: string,
-  backOrganization: string
-  backSubdivisionByOrganization: string
+  backOrganization: string,
+  backSubdivisionByOrganization: string,
+  backSubdivisionByOrganizationAndParent: string
 }

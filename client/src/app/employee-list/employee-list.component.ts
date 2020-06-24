@@ -5,7 +5,7 @@ import { EmployeeService } from '../services/employee.service';
 import { IEmployeeList } from '../../../../src/employee/interfaces/employeeList.dto';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { WindowState } from '../shared/window';
-import { IEmployeeListMode } from '../shared/window.enums';
+import { IListMode } from '../shared/window.enums';
 
 const VALUE_ACCESOR: Provider = {
   provide: NG_VALUE_ACCESSOR,
@@ -44,7 +44,7 @@ export class EmployeeListComponent implements ControlValueAccessor, OnInit, OnDe
   }
 
   selectEmployee (employee: IEmployeeList){
-    if (this.windowState.mode = IEmployeeListMode.view) {
+    if (this.windowState.mode = IListMode.view) {
       this.windowState.selectedRow = employee.pk
     } else {
       this.onChange(this.windowState)

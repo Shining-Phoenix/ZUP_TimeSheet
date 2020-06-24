@@ -8,7 +8,7 @@ import { Reflector } from '@nestjs/core';
 
 import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 import { TimeSheetService } from './time-sheet.service';
-import { TimeSheetInterface } from './interfaces/timeSheet.interface';
+import { ITimeSheet } from './interfaces/timeSheet.interface';
 
 @ApiTags('types-of-time')
 @Controller('api/v1/time-sheet')
@@ -21,7 +21,7 @@ export class TimeSheetController {
   @Roles('user')
   @UseGuards(new RolesGuard(new Reflector()))
   @Get('/time-sheet-list-for-keeper')
-  async getTimeSheetListForKeeper(@Request() req): Promise<TimeSheetInterface[]> {
+  async getTimeSheetListForKeeper(@Request() req): Promise<ITimeSheet[]> {
     const user: ITokenPayload = req.user;
     return this.timeSheetService.getTimeSheetListForKeeper(user);
   }
@@ -31,9 +31,9 @@ export class TimeSheetController {
   @Roles('user')
   @UseGuards(new RolesGuard(new Reflector()))
   @Get('/time-sheet-list-by-id')
-  async getTimeSheetListById(@Request() req, @Query() params: any): Promise<TimeSheetInterface> {
+  async getTimeSheetListById(@Request() req, @Query() params: any): Promise<ITimeSheet> {
     const user: ITokenPayload = req.user;
-    return this.timeSheetService.getTimeSheetListById(user, params.pk);
+    return this.timeSheetService.getTimeSheetListById(user, params.timeSheetPk);
   }
 }
 

@@ -1,4 +1,4 @@
-export enum  IEmployeeListMode {
+export enum  IListMode {
   select ='select',
   view = 'view'
 }

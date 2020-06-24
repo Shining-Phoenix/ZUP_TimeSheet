@@ -1,65 +1,87 @@
-<div  class = "ml-2 mr-2">
-  <h4 class="form-title">Табели сотрудников</h4>
-  <div class="table-actions mt-2 my-2">
-    <button class="btn" (click)="createTimeSheet()"> Создать </button>
-  </div>
-  <table class="table">
-    <thead class="thead-dark">
-    <tr>
-      <th scope="col">
-        Статус
-      </th>
-      <th scope="col">
-        Табельщик
-      </th>
-      <th scope="col">
-        1с
-      </th>
-      <th scope="col">
-        Дата
-      </th>
-      <th scope="col">
-        Период
-      </th>
-      <th scope="col">
-        Организация
-      </th>
-      <th scope="col">
-        Подразделение
-      </th>
-    </tr>
-    </thead>
+<app-page-header
+  [title]="'Табель'">
+</app-page-header>
 
-    <tbody>
-    <tr *ngFor="let timeSheet of timeSheetList"
-        class="table-row"
-        [ngClass]="{'selected-row': selectedTimeSheet && selectedTimeSheet === timeSheet.pk}"
-        (dblclick)="openTimeSheet(timeSheet)"
-        (click)="activateTimeSheetRow(timeSheet.pk)"
-    >
-      <td class="row-background">
-        {{ timeSheet.statusName }}
+<div class="ml-2 mr-2">
+
+  <div class="mt-2 my-2">
+    <button
+      type="button"
+      aria-label="Создать"
+      mat-stroked-button
+      (click)="createTimeSheet()">
+      <mat-icon aria-hidden="false" aria-label="control_point">control_point</mat-icon>
+      Создать
+    </button>
+  </div>
+
+  <hr class="mt-2">
+
+  <table
+    mat-table
+    [dataSource]="timeSheetList">
+
+    <ng-container matColumnDef="date">
+      <th width="10%"
+          mat-header-cell *matHeaderCellDef> Дата</th>
+      <td mat-cell *matCellDef="let element"> {{element.date | date:'short':'':'ru'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="period">
+      <th width="10%"
+        mat-header-cell *matHeaderCellDef> Период</th>
+      <td mat-cell *matCellDef="let element"> {{element.period| date:'MM.y':'':'ru'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="confirmedByTimekeeper">
+      <th width="5%"
+        mat-header-cell *matHeaderCellDef> Табельщик</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-checkbox
+          [checked]="element.confirmedByTimekeeper"
+          readonly
+        >
+        </mat-checkbox>
       </td>
-      <td class="row-background">
-        {{ timeSheet.confirmedByTimekeeper }}
+    </ng-container>
+
+    <ng-container matColumnDef="confirmedBy1c">
+      <th width="5%"
+        mat-header-cell *matHeaderCellDef> 1c</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-checkbox
+          [checked]="element.confirmedBy1c"
+          readonly
+        >
+        </mat-checkbox>
       </td>
-      <td class="row-background">
-        {{ timeSheet.confirmedBy1c }}
-      </td>
-      <td class="row-background">
-        {{ timeSheet.date }}
-      </td>
-      <td class="row-background">
-        {{ timeSheet.period }}
-      </td>
-      <td class="row-background">
-        {{ timeSheet.organizationName }}
-      </td>
-      <td class="row-background">
-        {{ timeSheet.subdivisionName }}
-      </td>
-    </tr>
-    </tbody>
+    </ng-container>
+
+    <ng-container matColumnDef="statusName">
+      <th width="10%"
+        mat-header-cell *matHeaderCellDef> Статус</th>
+      <td mat-cell *matCellDef="let element"> {{element.statusName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="organizationName">
+      <th width="30%"
+        mat-header-cell *matHeaderCellDef> Организация</th>
+      <td mat-cell *matCellDef="let element"> {{element.organizationName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="subdivisionName">
+      <th width="30%"
+        mat-header-cell *matHeaderCellDef> Подразделение</th>
+      <td mat-cell *matCellDef="let element"> {{element.subdivisionName}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row
+        *matRowDef="let row; columns: displayedColumns;"
+        (dblclick)="openTimeSheet(row)"
+        class="tk-table-row"
+    ></tr>
 
   </table>
+
 </div>

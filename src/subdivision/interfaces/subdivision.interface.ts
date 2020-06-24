@@ -4,4 +4,5 @@ export interface ISubdivision  {
     readonly code: string;
     readonly parent_pk: string;
     readonly organization_pk: string;
+    readonly hasChild: boolean
 }

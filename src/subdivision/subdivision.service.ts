@@ -39,7 +39,7 @@ export class SubdivisionService {
 
       await client.query('commit');
 
-      const createdSubdivision = _.assignIn(subdivisionDto, {pk});
+      const createdSubdivision = _.assignIn(subdivisionDto, {pk, hasChild: false});
 
       return createdSubdivision;
     } catch (e) {
@@ -117,6 +117,7 @@ export class SubdivisionService {
           parent_pk: subdivision.get('parent_pk').toString(),
           pk: subdivision.get('pk').toString(),
           name: subdivision.get('name').toString(),
+          hasChild: false
         };
 
         subdivisionList.push(newSubdivision);
@@ -130,5 +131,74 @@ export class SubdivisionService {
       await this.pgPoolService.pool.release(client);
     }
   }
+
+  async getByOrganizationAndParent(user: ITokenPayload, organizationPk: string, parentPk: string): Promise<ISubdivision[]> {
+    const client = await this.pgPoolService.client();
+
+    if (parentPk ==='') {
+      parentPk = '00000000-0000-0000-0000-000000000000'
+    }
+
+    //try {
+      await client.query('begin');
+
+      const subdivisionList = <ISubdivision[]>[];
+
+      const selectSQL = `
+      SELECT
+          subdivision."name", 
+          subdivision.pk, 
+          subdivision.code, 
+          subdivision.organization_pk, 
+          subdivision.parent_pk, 
+          max(
+            CAST(CASE WHEN subdivision_child.pk  IS NULL 
+            THEN 0 
+            ELSE 1 
+          END as integer)) as hasChild
+      FROM public.subdivision
+           left join public.subdivision as subdivision_child
+                on (subdivision.base_pk = subdivision_child.base_pk
+                   AND subdivision.pk = subdivision_child.parent_pk)
+      WHERE 
+          subdivision.base_pk = $1
+          AND subdivision.parent_pk = $2
+          AND subdivision.organization_pk = $3 
+      GROUP BY
+          subdivision."name", 
+          subdivision.pk, 
+          subdivision.code, 
+          subdivision.organization_pk, 
+          subdivision.parent_pk              
+      ORDER BY
+          "name"   
+      `;
+      const result = await client.query(selectSQL,
+        [
+          user.base_pk,
+          parentPk,
+          organizationPk]);
+
+      for (const subdivision of result) {
+        const newSubdivision: ISubdivision = {
+          code: subdivision.get('code').toString(),
+          organization_pk: subdivision.get('organization_pk').toString(),
+          parent_pk: subdivision.get('parent_pk').toString(),
+          pk: subdivision.get('pk').toString(),
+          name: subdivision.get('name').toString(),
+          hasChild: +subdivision.get('haschild').toString() === 1
+        };
+
+        subdivisionList.push(newSubdivision);
+      }
+
+      return subdivisionList;
+  //   } catch (e) {
+  //     await client.query('roolback');
+  //     throw e;
+  //   } finally {
+  //     await this.pgPoolService.pool.release(client);
+  //   }
+   }
 
 }

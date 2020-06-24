@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WindowState } from '../shared/window';
-import { IEmployeeListMode } from '../shared/window.enums';
+import { IListMode } from '../shared/window.enums';
 
 @Component({
   selector: 'app-employee-list-page',
@@ -10,7 +10,8 @@ import { IEmployeeListMode } from '../shared/window.enums';
 export class EmployeeListPageComponent {
 
   public windowState: WindowState = {
-    mode: IEmployeeListMode.view,
-    selectedRow: null
+    mode: IListMode.view,
+    selectedRow: null,
+    params: null
   }
 }
