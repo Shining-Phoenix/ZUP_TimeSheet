@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubdivisionSelectDialogComponent } from './subdivision-select-dialog.component';
+import { SubdivisionSelectDialogComponent } from './select-list-item-dialog';
 
 describe('SubdivisionSelectDialogComponent', () => {
   let component: SubdivisionSelectDialogComponent;

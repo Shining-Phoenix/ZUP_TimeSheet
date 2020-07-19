@@ -34,23 +34,20 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { TestTableComponent } from './test-table/test-table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { TestDashboardComponent } from './test-dashboard/test-dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { TestTreeComponent } from './test-tree/test-tree.component';
 import { MatTreeModule } from '@angular/material/tree';
-import { TestAddressFormComponent } from './test-address-form/test-address-form.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SubdivisionListComponent } from './subdivision-list/subdivision-list.component';
 import { MatProgressBar, MatProgressBarModule } from '@angular/material/progress-bar';
-import { SubdivisionSelectDialogComponent } from './subdivision-select-dialog/subdivision-select-dialog.component';
+import { SelectListItemDialogComponent } from './select-list-item-dialog/select-list-item-dialog';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { DateDatepickerComponent } from './shared/components/date-datepicker/date-datepicker.component';
 
 registerLocaleData(localeRu, 'ru', localeRuExtra);
 
@@ -61,7 +58,8 @@ const INTERCEPTOR_PROVIDER: Provider = {
 };
 
 
-@NgModule({
+@NgModule(
+  {
   declarations: [
     AppComponent,
     MainLayoutComponent,
@@ -73,13 +71,14 @@ const INTERCEPTOR_PROVIDER: Provider = {
     EmployeeListComponent,
     EmployeePageComponent,
     EmployeeComponent,
-    TestTableComponent,
-    TestDashboardComponent,
-    TestTreeComponent,
-    TestAddressFormComponent,
     SubdivisionListComponent,
-    SubdivisionSelectDialogComponent,
-    PageHeaderComponent
+    SelectListItemDialogComponent,
+    PageHeaderComponent,
+    DateDatepickerComponent
+  ],
+  entryComponents: [
+    SubdivisionListComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,

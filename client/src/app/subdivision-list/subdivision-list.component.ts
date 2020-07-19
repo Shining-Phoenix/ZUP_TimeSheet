@@ -1,4 +1,4 @@
-import { Component, forwardRef, OnDestroy, OnInit, Provider } from '@angular/core';
+import { Component, EventEmitter, forwardRef, Input, OnDestroy, OnInit, Output, Provider } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import {CollectionViewer, SelectionChange, DataSource} from '@angular/cdk/collections';
@@ -111,12 +111,15 @@ export class DynamicDataSource implements DataSource<DynamicFlatNode> {
   styleUrls: ['./subdivision-list.component.scss'],
   providers: [VALUE_ACCESOR]
 })
-export class SubdivisionListComponent implements  ControlValueAccessor, OnDestroy {
+export class SubdivisionListComponent implements  OnInit, OnDestroy {
+
+  @Input()
+  public windowState: WindowState
+  @Output()
+  private outputWindowState = new EventEmitter()
 
   private pSub: Subscription;
-  private onChange = (value : any) => {}
   public title =  ''
-  public windowState: WindowState
   public subdivisionList: ISubdivision[];
   public selectedRow: null
 
@@ -141,19 +144,8 @@ export class SubdivisionListComponent implements  ControlValueAccessor, OnDestro
     this.selectedRow = pk
   }
 
-  registerOnChange(fn: any): void {
-    this.onChange = fn
-  }
 
-  registerOnTouched(fn: any): void {
-  }
-
-  setDisabledState(isDisabled: boolean): void {
-  }
-
-  writeValue(windowState: WindowState): void {
-    if (windowState) {
-      this.windowState = windowState
+  ngOnInit() {
       this.catalogsService.getSubdivisionByOrganizationAndParent(this.windowState.params.organizationPk, '').subscribe(subdivisionList => {
         this.subdivisionList = subdivisionList;
 
@@ -166,7 +158,6 @@ export class SubdivisionListComponent implements  ControlValueAccessor, OnDestro
 
         this.dataSource.data = nodes;
       })
-    }
   }
 
 
@@ -188,5 +179,10 @@ export class SubdivisionListComponent implements  ControlValueAccessor, OnDestro
   actionCansel() {
     this.onChange(null)
   }
+
+  onChange(windowState: WindowState){
+    this.outputWindowState.emit(windowState)
+  }
+
 }
 

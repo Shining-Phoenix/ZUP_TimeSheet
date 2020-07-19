@@ -41,19 +41,10 @@
   </div>
 
   <div>
-    <mat-form-field
+    <app-date-datepicker
       class="document-header-element"
-      [floatLabel]="'always'">
-      <mat-label>Период</mat-label>
-      <input matInput [matDatepicker]="dp" [formControl]="periodPicker">
-      <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
-      <mat-datepicker #dp
-                      startView="year"
-                      (yearSelected)="chosenYearHandler($event)"
-                      (monthSelected)="chosenMonthHandler($event, dp)"
-                      panelClass="example-month-picker">
-      </mat-datepicker>
-    </mat-form-field>
+      [(ngModel)]="period"
+    ></app-date-datepicker>
   </div>
 
   <div>

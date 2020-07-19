@@ -12,6 +12,7 @@ export class EmployeeListPageComponent {
   public windowState: WindowState = {
     mode: IListMode.view,
     selectedRow: null,
-    params: null
+    params: null,
+    dialogComponent: null
   }
 }
