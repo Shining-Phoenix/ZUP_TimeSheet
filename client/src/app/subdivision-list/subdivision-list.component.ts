@@ -12,14 +12,6 @@ import { IListMode } from '../shared/window.enums';
 import { ISubdivision } from '../../../../src/subdivision/interfaces/subdivision.interface';
 import { CatalogsService } from '../services/catalog.service';
 
-
-
-const VALUE_ACCESOR: Provider = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef( () => SubdivisionListComponent),
-  multi: true
-}
-
 /** Flat node with expandable and level information */
 export class DynamicFlatNode {
   constructor(public item: ISubdivision, public level = 1, public expandable = false,
@@ -104,12 +96,10 @@ export class DynamicDataSource implements DataSource<DynamicFlatNode> {
   }
 }
 
-
 @Component({
   selector: 'app-subdivision-list',
   templateUrl: './subdivision-list.component.html',
-  styleUrls: ['./subdivision-list.component.scss'],
-  providers: [VALUE_ACCESOR]
+  styleUrls: ['./subdivision-list.component.scss']
 })
 export class SubdivisionListComponent implements  OnInit, OnDestroy {
 
@@ -120,8 +110,9 @@ export class SubdivisionListComponent implements  OnInit, OnDestroy {
 
   private pSub: Subscription;
   public title =  ''
-  public subdivisionList: ISubdivision[];
+  public subdivisionList: ISubdivision[]
   public selectedRow: null
+  private selectedObject: null
 
   treeControl: FlatTreeControl<DynamicFlatNode>;
   dataSource: DynamicDataSource;
@@ -134,55 +125,54 @@ export class SubdivisionListComponent implements  OnInit, OnDestroy {
     this.dataSource = new DynamicDataSource(this.treeControl, catalogsService);
   }
 
+  ngOnInit() {
+    this.catalogsService.getSubdivisionByOrganizationAndParent(this.windowState.params.organizationPk, '').subscribe(subdivisionList => {
+      this.subdivisionList = subdivisionList;
+
+      const nodes: DynamicFlatNode[] = []
+
+      for (const sub of this.subdivisionList) {
+        const dynamicFlatNode = new DynamicFlatNode(sub, 1, sub.hasChild, false)
+        nodes.push(dynamicFlatNode)
+      }
+
+      this.dataSource.data = nodes;
+    })
+  }
+
   ngOnDestroy() {
     if (this.pSub) {
       this.pSub.unsubscribe()
     }
   }
 
-  select(pk){
-    this.selectedRow = pk
+  emitSelection(windowState: WindowState){
+    this.outputWindowState.emit(windowState)
   }
 
-
-  ngOnInit() {
-      this.catalogsService.getSubdivisionByOrganizationAndParent(this.windowState.params.organizationPk, '').subscribe(subdivisionList => {
-        this.subdivisionList = subdivisionList;
-
-        const nodes: DynamicFlatNode[] = []
-
-        for (const sub of this.subdivisionList) {
-          const dynamicFlatNode = new DynamicFlatNode(sub, 1, sub.hasChild, false)
-          nodes.push(dynamicFlatNode)
-        }
-
-        this.dataSource.data = nodes;
-      })
+  formSelect() {
+    this.windowState.selectedRow = this.selectedRow
+    this.windowState.params = {...this.windowState.params, selectedRowItem: this.selectedObject}
+    this.emitSelection(this.windowState)
   }
 
+  formCancel() {
+    this.emitSelection(null)
+  }
 
-  selectElement(node: any) {
-      if (this.windowState.mode = IListMode.view) {
+  listRowActivate(node){
+    this.selectedRow = node.item.pk
+    this.selectedObject = node.item
+  }
+
+  listRowSelect(node: any) {
+      if (this.windowState.mode = IListMode.select) {
         this.windowState.selectedRow = node.item.pk
         this.windowState.params = {...this.windowState.params, selectedRowItem: node.item}
-        this.onChange(this.windowState)
+        this.emitSelection(this.windowState)
       }
   }
 
-  actionSelect() {
-    const element = this.subdivisionList.find( el => el.pk === this.selectedRow )
-    this.windowState.selectedRow = element.pk
-    this.windowState.params = {...this.windowState.params, selectedRowItem: element}
-    this.onChange(this.windowState)
-  }
-
-  actionCansel() {
-    this.onChange(null)
-  }
-
-  onChange(windowState: WindowState){
-    this.outputWindowState.emit(windowState)
-  }
 
 }
 

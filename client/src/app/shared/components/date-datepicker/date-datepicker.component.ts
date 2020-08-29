@@ -4,7 +4,7 @@ import { MatDatepicker } from '@angular/material/datepicker';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MAT_MOMENT_DATE_ADAPTER_OPTIONS, MomentDateAdapter } from '@angular/material-moment-adapter';
 import * as _moment from 'moment';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { SubdivisionListComponent } from '../../../subdivision-list/subdivision-list.component';
 
 const moment = _moment;
@@ -17,10 +17,10 @@ const VALUE_ACCESOR: Provider = {
 
 export const MY_FORMATS = {
   parse: {
-    dateInput: 'MM/YYYY',
+    dateInput: 'MM.YYYY',
   },
   display: {
-    dateInput: 'MM/YYYY',
+    dateInput: 'MM.YYYY',
     monthYearLabel: 'MMM YYYY',
     dateA11yLabel: 'LL',
     monthYearA11yLabel: 'MMMM YYYY',
@@ -45,7 +45,7 @@ export const MY_FORMATS = {
 })
 export class DateDatepickerComponent implements ControlValueAccessor{
 
-  public periodPicker = moment();
+  public date = new FormControl(moment());
   private onChange = (value: any) => {}
 
   constructor(
@@ -54,7 +54,7 @@ export class DateDatepickerComponent implements ControlValueAccessor{
   }
 
   writeValue(value: Date) {
-      this.periodPicker = moment(value)
+      this.date.setValue(moment(value))
     }
     registerOnChange(fn: any) {
       this.onChange = fn
@@ -67,14 +67,22 @@ export class DateDatepickerComponent implements ControlValueAccessor{
     }
 
   chosenYearHandler(normalizedYear: Moment) {
-    this.periodPicker.year(normalizedYear.year());
-    this.onChange(this.periodPicker.toDate())
+    const ctrlValue = this.date.value
+    ctrlValue.year(normalizedYear.year())
+    this.date.setValue(ctrlValue)
+    this.onChange(this.date.value.toDate().setDate(1))
   }
 
   chosenMonthHandler(normalizedMonth: Moment, datepicker: MatDatepicker<Moment>) {
-    this.periodPicker.month(normalizedMonth.month());
-    datepicker.close();
-    this.onChange(this.periodPicker.toDate())
+    const ctrlValue = this.date.value
+    ctrlValue.month(normalizedMonth.month())
+    this.date.setValue(ctrlValue)
+    datepicker.close()
+    this.onChange(this.date.value.toDate().setDate(1))
+  }
+
+  chosenDateHandler() {
+    this.onChange(this.date.value.toDate().setDate(1))
   }
 
 }

@@ -8,7 +8,7 @@
     aria-label="Выбрать"
     mat-stroked-button
     [disabled]="!selectedRow"
-    (click)="actionSelect()">
+    (click)="formSelect()">
     <mat-icon aria-hidden="false" aria-label="control_point">done</mat-icon>
   Выбрать
   </button>
@@ -17,7 +17,7 @@
     type="button"
     aria-label="Отменить"
     mat-stroked-button
-    (click)="actionCansel()">
+    (click)="formCancel()">
     <mat-icon aria-hidden="false" aria-label="control_point">undo</mat-icon>
     Отменить
   </button>
@@ -26,8 +26,8 @@
 
   <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
     <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding
-                   (click)="select(node.item.pk)"
-                   (dblclick)="selectElement(node)"
+                   (click)="listRowActivate(node)"
+                   (dblclick)="listRowSelect(node)"
                    [ngClass]="{'selectedRow': node.item.pk === selectedRow}"
     >
       <button mat-icon-button disabled></button>
@@ -35,8 +35,8 @@
     </mat-tree-node>
     <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding
                    [ngClass]="{'selectedRow': node.item.pk === selectedRow}"
-                   (click)="select(node.item.pk)"
-                   (dblclick)="selectElement(node)">
+                   (click)="listRowActivate(node)"
+                   (dblclick)="listRowSelect(node)">
       <button mat-icon-button
               [attr.aria-label]="'toggle ' + node.filename" matTreeNodeToggle>
         <mat-icon class="mat-icon-rtl-mirror">

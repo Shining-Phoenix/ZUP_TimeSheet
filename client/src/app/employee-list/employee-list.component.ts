@@ -1,40 +1,36 @@
-import { Component, forwardRef, OnDestroy, OnInit, Provider } from '@angular/core';
+import { Component, EventEmitter, forwardRef, Input, OnDestroy, OnInit, Output, Provider } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { EmployeeService } from '../services/employee.service';
 import { IEmployeeList } from '../../../../src/employee/interfaces/employeeList.dto';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { WindowState } from '../shared/window';
 import { IListMode } from '../shared/window.enums';
-
-const VALUE_ACCESOR: Provider = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef( () => EmployeeListComponent),
-  multi: true
-}
+import { IEmployee } from '../../../../src/employee/interfaces/employee.interface';
 
 @Component({
   selector: 'app-employee-list',
   templateUrl: './employee-list.component.html',
-  styleUrls: ['./employee-list.component.scss'],
-  providers: [VALUE_ACCESOR]
+  styleUrls: ['./employee-list.component.scss']
 })
-export class EmployeeListComponent implements ControlValueAccessor, OnInit, OnDestroy {
+export class EmployeeListComponent implements OnInit, OnDestroy {
+
+  @Input()
+  public windowState: WindowState
+  @Output()
+  private outputWindowState = new EventEmitter()
 
   private pSub: Subscription;
-  private onChange = (value : any) => {}
-  public windowState: WindowState
-  public selectedEmployee: string;
+  public selectedRow: string
+  private selectedObject: IEmployee
   public employeeList: IEmployeeList[];
 
   constructor(
     private employeeService: EmployeeService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.employeeService.getEmployeeListForKeeper().subscribe(employeeList => {
       this.employeeList = employeeList;
     })
-
   }
 
   ngOnDestroy() {
@@ -43,40 +39,31 @@ export class EmployeeListComponent implements ControlValueAccessor, OnInit, OnDe
     }
   }
 
-  selectEmployee (employee: IEmployeeList){
-    if (this.windowState.mode = IListMode.view) {
+  emitSelection(windowState: WindowState){
+    this.outputWindowState.emit(windowState)
+  }
+
+  formSelect() {
+    this.windowState.selectedRow = this.selectedRow
+    this.windowState.params = {...this.windowState.params, selectedRowItem: this.selectedObject}
+    this.emitSelection(this.windowState)
+  }
+
+  formCancel() {
+    this.emitSelection(null)
+  }
+
+  listRowActivate (employee: IEmployee){
+    this.selectedRow = employee.pk
+    this.selectedObject = employee
+  }
+
+  listRowSelect (employee: IEmployee){
+    if (this.windowState.mode = IListMode.select) {
       this.windowState.selectedRow = employee.pk
-    } else {
-      this.onChange(this.windowState)
+      this.windowState.params = {...this.windowState.params, selectedRowItem: employee}
+      this.emitSelection(this.windowState)
     }
   }
 
-
-  select(pk: string){
-    this.windowState = {...this.windowState, selectedRow: pk}
-  }
-
-  hideWindow() {
-    this.windowState = {...this.windowState, selectedRow: undefined}
-  }
-
-  activateEmployee (pk: string){
-    this.selectedEmployee = pk
-  }
-
-
-
-  registerOnChange(fn: any): void {
-    this.onChange = fn
-  }
-
-  registerOnTouched(fn: any): void {
-  }
-
-  setDisabledState(isDisabled: boolean): void {
-  }
-
-  writeValue(windowState: WindowState): void {
-    this.windowState = windowState
-  }
 }

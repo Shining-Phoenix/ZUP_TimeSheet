@@ -23,8 +23,6 @@ export class AlertComponent implements OnInit, OnDestroy {
     this.aSub = this.alertService.alert$.subscribe(alert => {
 
       this.staticAlertClosed = false;
-      console.log('false')
-
       this.text = alert.text
       this.type = alert.type
 

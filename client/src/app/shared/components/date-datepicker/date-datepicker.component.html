@@ -2,7 +2,10 @@
   class="document-header-element"
   [floatLabel]="'always'">
   <mat-label>Период</mat-label>
-  <input matInput [matDatepicker]="dp" [value]="periodPicker.toDate()">
+  <input matInput
+         [matDatepicker]="dp"
+         [formControl]="date"
+         (dateChange)="chosenDateHandler()">
   <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
   <mat-datepicker #dp
                   startView="year"

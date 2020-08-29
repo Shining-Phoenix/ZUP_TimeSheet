@@ -10,7 +10,7 @@ import { ITokenPayload } from '../auth/interfaces/token-payload.interface';
 import { TimeSheetService } from './time-sheet.service';
 import { ITimeSheet } from './interfaces/timeSheet.interface';
 
-@ApiTags('types-of-time')
+@ApiTags('time-sheet')
 @Controller('api/v1/time-sheet')
 @UseGuards(JwtAuthGuard, RolesGuard)
 export class TimeSheetController {

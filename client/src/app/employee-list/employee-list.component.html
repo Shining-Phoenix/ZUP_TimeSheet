@@ -1,3 +1,29 @@
+<app-page-header
+  [title]="'Сотрудники'">
+</app-page-header>
+
+<div class="mt-2 my-2">
+  <button
+    type="button"
+    aria-label="Выбрать"
+    mat-stroked-button
+    [disabled]="!selectedRow"
+    (click)="formSelect()">
+    <mat-icon aria-hidden="false" aria-label="control_point">done</mat-icon>
+    Выбрать
+  </button>
+
+  <button
+    type="button"
+    aria-label="Отменить"
+    mat-stroked-button
+    (click)="formCancel()">
+    <mat-icon aria-hidden="false" aria-label="control_point">undo</mat-icon>
+    Отменить
+  </button>
+
+  <hr class="mt-2">
+
 <div>
   <h4 class="mt-3 mb-3"> > Сотрудники</h4>
   <table class="table">
@@ -18,9 +44,9 @@
     <tbody>
     <tr *ngFor="let employee of employeeList"
         class="table-row"
-        [ngClass]="{'selected-row': selectedEmployee && selectedEmployee === employee.pk}"
-        (dblclick)="selectEmployee(employee)"
-        (click)="activateEmployee(employee.pk)"
+        [ngClass]="{'selected-row': selectedRow && selectedRow === employee.pk}"
+        (click)="listRowActivate(employee)"
+        (dblclick)="listRowSelect(employee)"
     >
       <td class="row-background">
         {{ employee.name }}
@@ -36,14 +62,4 @@
 
   </table>
 
-  <div
-    class="pop-up-window-wrapper"
-    [ngClass]="{'display-block': windowState && windowState.selectedRow}"
-    (click)="hideWindow()">
-    <div class="pop-up-window">
-      <app-employee
-        [(ngModel)]="windowState && windowState.selectedRow"
-      ></app-employee>
-    </div>
-  </div>
 </div>
